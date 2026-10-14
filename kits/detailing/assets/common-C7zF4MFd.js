@@ -1,1 +1,0 @@
-import{u as e}from"./preload-helper-CH9D4a5b.js";var t=(t,n)=>e()?n:t,n=e=>e<0?0:e>1?1:e,r=(e,t,r)=>{let i=n((e-t)/(r-t));return i*i*(3-2*i)};function i(e,t){let n=t.getBoundingClientRect(),r=(e??t).getBoundingClientRect();return{x:r.left-n.left,y:r.top-n.top,w:r.width,h:r.height}}function a(e){let t;return n=>{n!==t&&(t=n,e(n))}}export{r as a,t as i,n,a as r,i as t};

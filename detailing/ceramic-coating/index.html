@@ -14,20 +14,27 @@
 <style>@view-transition{navigation:auto}@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}</style>
 <link rel="icon" href="data:,">
 <link rel="preload" href="/kits/detailing/assets/archivo-BzJ0S0vh.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/kits/detailing/assets/newsreader-italic-B3bdkET3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/kits/detailing/assets/martian-mono-DrwrJidJ.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/json" id="biz">{"businessName":"Sixfold Detail Studio","brand":"Sixfold","nameLines":["Six","fold"],"city":"Scottsdale","state":"Arizona","phone":"(555) 010-0142","address":"1420 North Sixfold Way, Scottsdale, AZ 85257","mapsUrl":"https://www.google.com/maps/search/?api=1&query=Scottsdale%2C+Arizona","rating":null,"reviewCount":null,"hours":[{"days":"Monday to Friday","hours":"8 am to 6 pm"},{"days":"Saturday","hours":"9 am to 4 pm"},{"days":"Sunday","hours":"Closed"}],"servicesShort":"Ceramic coating, paint protection film and window tint","services":["exterior","interior","correction","ceramic","film","tint"],"accent":null}</script>
 <script>
-// Before the first paint: can this browser draw the page live, has this visitor already seen the preloader in this session, and which paint did they leave the car in?
+// Before the first paint: can this browser draw the page live, which paint did this visitor leave the car in, and have they already seen the preloader in this session?
 (function (root) {
+  var house = root.dataset.finish, seen = false;
   try {
-    var canvas = document.createElement("canvas"), house = root.dataset.finish;
+    var canvas = document.createElement("canvas");
     if ((canvas.getContext("webgl2") || canvas.getContext("webgl")) && !matchMedia("(prefers-reduced-motion: reduce)").matches && !/[?&]still(=|&|$)/.test(location.search)) root.dataset.mode = "live";
+  } catch (e) {}
+  try {
     var paint = sessionStorage.getItem("detailing-colour");
     if (paint && /^[a-z]+$/.test(paint)) { root.dataset.finish = paint; root.dataset.loud = String(paint === house); }
-    // A visitor who has seen the preloader is not shown it twice: a photograph of the car holds its place instead.
-    // There is no photograph of the car in a business's own colour, so there the preloader is shown again.
-    var own = /"accent"\s*:\s*"/.test(document.getElementById("biz").textContent);
-    if (sessionStorage.getItem("detailing-loaded") === "1" && !(own && root.dataset.finish === house)) root.dataset.seen = "";
+    seen = sessionStorage.getItem("detailing-loaded") === "1";
   } catch (e) {}
+  // Until the car itself can be drawn, a photograph of it in this paint stands in the hero, so the page opens without
+  // waiting for the car. A visitor who has seen the preloader is not shown it twice either: the photograph is there at once.
+  // There is no photograph of the car in a business's own colour, so there the preloader is shown, and waits for the car.
+  var own = /"accent"\s*:\s*"/.test(document.getElementById("biz").textContent);
+  if (!(own && root.dataset.finish === house)) { root.dataset.photo = ""; if (seen) root.dataset.seen = ""; }
   // Where the browser crossfades one page into the next, a crossfade it has to drop (the tab was hidden, another link
   // was pressed) is not an error: the page simply arrives.
   var quiet = function (e) { if (e.viewTransition) { root.dataset.arrived = e.type; e.viewTransition.ready.catch(function () {}); e.viewTransition.finished.catch(function () {}); } };
@@ -35,11 +42,9 @@
   addEventListener("pageswap", quiet);
 })(document.documentElement);
 </script>
-  <script type="module" crossorigin src="/kits/detailing/assets/preload-helper-CH9D4a5b.js"></script>
-  <script type="module" crossorigin src="/kits/detailing/assets/three.core-BYJU2Mfk.js"></script>
-  <script type="module" crossorigin src="/kits/detailing/assets/theme-CpaG79MJ.js"></script>
-  <script type="module" crossorigin src="/kits/detailing/assets/page-RZ3kle6n.js"></script>
-  <link rel="stylesheet" crossorigin href="/kits/detailing/assets/preload-helper-BqJv_fu6.css">
+  <script type="module" crossorigin src="/kits/detailing/assets/preload-helper-B3rh8hwH.js"></script>
+  <script type="module" crossorigin src="/kits/detailing/assets/page-BgAa9BvK.js"></script>
+  <link rel="stylesheet" crossorigin href="/kits/detailing/assets/preload-helper-DLJauX5I.css">
 </head>
 <body data-page="service" data-key="ceramic">
 
@@ -91,12 +96,12 @@
   </dl>
 </nav>
 
-<div class="frame" aria-hidden="true" data-bay></div>
 <div class="field" aria-hidden="true"><i class="blade"></i></div>
 <div class="bayfield" aria-hidden="true"></div>
 <canvas id="stage" aria-hidden="true"></canvas>
 <i class="flood" aria-hidden="true"></i>
 <i class="window-marks" aria-hidden="true" data-bay></i>
+<div class="frame" aria-hidden="true" data-bay></div>
 
 <main id="sheets" class="page page-service">
 
@@ -247,7 +252,7 @@
   </div>
 </div>
 
-<div class="loader" aria-hidden="true"><div class="loader-row" data-loader-row></div><span class="spec"><span data-loader-count>000</span> / 100</span></div>
+<div class="loader" aria-hidden="true"><div class="loader-row" data-loader-row><i style="--i:0;--c:#e6e3d9"><b></b></i><i style="--i:1;--c:#4a0d13"><b></b></i><i style="--i:2;--c:#2a3a66"><b></b></i><i style="--i:3;--c:#0f3324"><b></b></i><i style="--i:4;--c:#ffc400"><b></b></i><i style="--i:5;--c:#6f7173"><b></b></i></div><span class="spec"><span data-loader-count>000</span> / 100</span></div>
 <div class="cursor" aria-hidden="true"><span></span></div>
 <svg class="grain" aria-hidden="true" focusable="false" data-bay><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
 
