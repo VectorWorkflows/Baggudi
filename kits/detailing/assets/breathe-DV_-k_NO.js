@@ -1,0 +1,1 @@
+function e(){let e=globalThis.scheduler;return e?.yield?e.yield():new Promise(e=>{let t=new MessageChannel;t.port1.onmessage=()=>e(),t.port2.postMessage(0)})}export{e as t};

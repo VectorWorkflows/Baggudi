@@ -10,15 +10,13 @@ Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CarC
 Licence: https://creativecommons.org/licenses/by/4.0/
 
 STUDIO LIGHT
-photo_studio_01, from Poly Haven (https://polyhaven.com). CC0.
+photo_studio_01, from Poly Haven (https://polyhaven.com). CC0. Shipped pre-filtered, as assets/env/light.webp.
 
 CODE
 three.js, MIT, (c) three.js authors.
 GSAP, (c) GreenSock / Webflow, the standard GSAP licence: https://gsap.com/licensing
 Lenis, MIT, (c) darkroom.engineering.
 meshoptimizer decoder, MIT, (c) Arseny Kapoulkine.
-Draco decoder, Apache 2.0, (c) Google.
-Basis Universal transcoder, Apache 2.0, (c) Binomial LLC.
 
 FONTS
 Archivo, Martian Mono and Newsreader are used under the SIL Open Font License 1.1. Their licences follow in full.
