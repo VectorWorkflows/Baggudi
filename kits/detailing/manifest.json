@@ -1766,6 +1766,46 @@
    ],
    "made": "2026-10-20",
    "updated": "2026-10-20"
+  },
+  "az-detailers-car-detailing-services-ppf-spray-phoe": {
+   "demo": false,
+   "data": {
+    "businessName": "AZ Detailers - Car Detailing Services | PPF Spray",
+    "brand": "AZ Detailers - Car Detailing Services | PPF Spray",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 978-1136",
+    "address": "3532 E Orange Dr, Phoenix, AZ 85018, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1651058668096055508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 53,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJJ88uQ3cNK4cR1OgxZxy96RY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-20",
+   "updated": "2026-10-20"
   }
  }
 }
