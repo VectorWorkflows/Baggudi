@@ -1,8 +1,8 @@
 {
  "about": "Written by make_demo.py in the detailing kit. It lists every file that script has published here; it only ever overwrites or removes these.",
  "kit": {
-  "version": "f0ce2ca287e27bea990cf2fcd54171130d149c0a",
-  "built": "2026-10-16T06:07:36",
+  "version": "3ca026637c83f308610d930bfd9aa3f0db120bd5",
+  "built": "2026-10-20T22:07:51",
   "files": [
    "assets/01-1280-C7ypAaum.webp",
    "assets/01-1280-Sjd4czha.avif",
@@ -45,6 +45,7 @@
    "assets/compare-desktop-C9aiWMDw.webp",
    "assets/compare-phone-B5l35Ftr.webp",
    "assets/env/light.webp",
+   "assets/favicon-BFZPsx9v.png",
    "assets/hero-desktop-car-rLdXYGF2.webp",
    "assets/hero-desktop-shadow-M4IYvov2.webp",
    "assets/hero-phone-car-B2Vz7smr.webp",
@@ -164,7 +165,7 @@
     "og.png"
    ],
    "made": "2026-10-14",
-   "updated": "2026-10-16"
+   "updated": "2026-10-20"
   },
   "speedfilm-motorsports-atlanta": {
    "demo": false,
