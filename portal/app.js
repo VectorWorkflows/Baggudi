@@ -11,7 +11,7 @@
   'use strict';
 
   const MAX_PHOTOS = 10;
-  const MAX_TOTAL_MB = 20;              // Formspree takes up to 100 MB per submission; lower this for stricter services
+  const MAX_TOTAL_MB = 9;               // FormSubmit caps all files at 10 MB together; 9 MiB stays under it either way it counts
   const MAX_EDGE = 2048;                // px on the long side after resizing; the sites show 1280 at most
   const JPEG_QUALITY = 0.85;
   const KEEP_UNDER = 1.5 * 1024 * 1024; // a photo already this small and within MAX_EDGE is sent as is
@@ -343,7 +343,8 @@
     const type = typeSel.value;
     const data = new FormData(form);
     data.delete('photos');
-    for (const p of photos) data.append('photos', p.file, p.file.name);
+    // one field per photo: FormSubmit's documented upload is a named field per file
+    photos.forEach((p, i) => data.append(`photo_${i + 1}`, p.file, p.file.name));
     data.set('_subject', `Website update: ${shop} · ${type}`);
 
     setBusy('Sending…');

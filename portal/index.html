@@ -48,17 +48,20 @@
       Everything posts to the form's action below; app.js reads it from here,
       so this is the only line to change when swapping services. Any service
       that takes a multipart POST and answers 2xx will work.
-        Formspree: https://formspree.io/f/<form id>
-                   Photos need a paid plan; the free plan rejects file uploads.
-      Which inbox gets the email is set in the service's dashboard, not here.
+        FormSubmit: https://formsubmit.co/<email>, emailing that address.
+                    The first submission sends an activation email; nothing
+                    is delivered until the link in it is clicked. Files are
+                    capped at 10 MB in total (MAX_TOTAL_MB in app.js).
     -->
     <form class="core form" id="update-form"
-          action="https://formspree.io/f/YOUR_FORM_ID"
+          action="https://formsubmit.co/support@vectorworkflows.com"
           method="POST" enctype="multipart/form-data">
 
       <input type="hidden" name="_subject" value="Website update from the client portal">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://baggudi.com/portal/">
       <div class="hp" aria-hidden="true">
-        <label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        <label>Leave this empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
       </div>
 
       <div class="step" role="group" aria-labelledby="step-1">
