@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .tile { fill: #130e0b; }
+    .mark { fill: none; stroke: #f6f5f1; stroke-width: 5; stroke-linejoin: round; }
+  </style>
+  <rect class="tile" width="64" height="64" rx="14"/>
+  <path class="mark" d="M22 17.6 32 23.4V40.6L22 46.4 12 40.6V23.4Z"/>
+  <path class="mark" d="M42 17.6 52 23.4V40.6L42 46.4 32 40.6V23.4Z"/>
+</svg>

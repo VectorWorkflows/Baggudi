@@ -1,0 +1,5 @@
+/* AZ Detailers only: linked last on each of its pages, and on no other business's (make_demo.py: customise).
+   Unlayered, so it wins over the kit's layered styles without !important. */
+
+/* the featured service, PPF, tagged in a desert-sun orange rather than the page's ink */
+.svc-meta .featured { background: oklch(0.74 0.15 60); color: #130e0b; }

@@ -1,8 +1,8 @@
 {
  "about": "Written by make_demo.py in the detailing kit. It lists every file that script has published here; it only ever overwrites or removes these.",
  "kit": {
-  "version": "3ca026637c83f308610d930bfd9aa3f0db120bd5",
-  "built": "2026-10-20T22:07:51",
+  "version": "6cc1711856322db1d9b039b8a99b8dcbd0c9ba3c",
+  "built": "2026-10-21T22:49:26",
   "files": [
    "assets/01-1280-C7ypAaum.webp",
    "assets/01-1280-Sjd4czha.avif",
@@ -41,22 +41,23 @@
    "assets/book-DPTLf353.js",
    "assets/breathe-DV_-k_NO.js",
    "assets/car.glb",
-   "assets/common-DJ3i5kDU.js",
+   "assets/common-DzpWg4Q4.js",
    "assets/compare-desktop-C9aiWMDw.webp",
    "assets/compare-phone-B5l35Ftr.webp",
    "assets/env/light.webp",
    "assets/favicon-BFZPsx9v.png",
+   "assets/favicon-CyUzgLIG.svg",
    "assets/hero-desktop-car-rLdXYGF2.webp",
    "assets/hero-desktop-shadow-M4IYvov2.webp",
    "assets/hero-phone-car-B2Vz7smr.webp",
    "assets/hero-phone-shadow-34cWo9sp.webp",
-   "assets/home-DXbJ7BTP.js",
-   "assets/index-B4gFK6hV.js",
-   "assets/kit-C3pfPldA.js",
+   "assets/home-CNm2rLo1.js",
+   "assets/index-BjgU5t9R.js",
+   "assets/kit-BSIb5XLB.js",
    "assets/LICENSES.txt",
-   "assets/loader-C5QHKCl0.js",
+   "assets/loader-Dtq_kvK6.js",
    "assets/martian-mono-DrwrJidJ.woff2",
-   "assets/motion-DXF7CSMe.js",
+   "assets/motion-BCGvW8mc.js",
    "assets/newsreader-italic-B3bdkET3.woff2",
    "assets/opening-desktop-brg-t2mCoJrL.webp",
    "assets/opening-desktop-chalk-CLEFyZMv.webp",
@@ -70,18 +71,18 @@
    "assets/opening-phone-nardo-DhGhp4bt.webp",
    "assets/opening-phone-oxblood-CVMoI8a0.webp",
    "assets/opening-phone-signal-Dmqq6804.webp",
-   "assets/page-CjCjbER5.js",
+   "assets/page-DxlErLbR.js",
    "assets/perf-BBdebv40.js",
    "assets/plan-car-CoKu9uNc.webp",
    "assets/plan-shadow-BHfoE2vD.webp",
-   "assets/preload-helper-Cmti8348.js",
-   "assets/rest-B5YDspfL.js",
+   "assets/preload-helper-CJX0K4rZ.js",
+   "assets/rest-BiatMJKV.js",
    "assets/ring.worker-CQjLFRcO.js",
-   "assets/scroll-D-sLntt9.css",
-   "assets/scroll-Dz7jbdHV.js",
-   "assets/service-BGlb_UP8.js",
+   "assets/scroll-BYAnHl-5.js",
+   "assets/scroll-CW_3VqKR.css",
+   "assets/service-DbRdT0oJ.js",
    "assets/stack-DTj3b8vV.webp",
-   "assets/still-v6ztsvbc.js",
+   "assets/still-D7QDjAqE.js",
    "assets/svc-ceramic-after-CJHJeO51.webp",
    "assets/svc-ceramic-before-CStkyq8q.webp",
    "assets/svc-correction-after-Bndyjp-P.webp",
@@ -98,7 +99,7 @@
    "assets/swatch-nardo-De1Cuze8.webp",
    "assets/swatch-oxblood-L9uQxqFP.webp",
    "assets/swatch-signal-BFHaGgoL.webp",
-   "assets/theme-DJIvqC0C.js",
+   "assets/theme-CGwe_KD5.js",
    "assets/thumb-brg-BmrAAHAT.webp",
    "assets/thumb-chalk-a2HakMUQ.webp",
    "assets/thumb-midnight-D0VwlnS3.webp",
@@ -165,7 +166,7 @@
     "og.png"
    ],
    "made": "2026-10-14",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "speedfilm-motorsports-atlanta": {
    "demo": false,
@@ -205,7 +206,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "detailing-center-miami-dade-miami": {
    "demo": false,
@@ -245,7 +246,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "scottsdale-auto-film-specialists-phoenix": {
    "demo": false,
@@ -285,7 +286,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "itints-technologies-miami": {
    "demo": false,
@@ -325,7 +326,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "color-factory-dfw-dallas": {
    "demo": false,
@@ -365,7 +366,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "detail-geeks-ppf-paint-protection-film-ceramic-coa": {
    "demo": false,
@@ -405,7 +406,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "alternative-finishes-xpel-atlanta": {
    "demo": false,
@@ -445,7 +446,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "tint-and-go-miami-miami": {
    "demo": false,
@@ -485,7 +486,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "cheval-noir-motorsports-ceramic-coatings-paint-cor": {
    "demo": false,
@@ -525,7 +526,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "prompt-mobile-car-detailing-of-coconut-grove-miami": {
    "demo": false,
@@ -565,7 +566,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "masterpiece-auto-appearance-ceramic-coating-paint": {
    "demo": false,
@@ -605,7 +606,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "alta-mere-the-automotive-outfitters-dallas": {
    "demo": false,
@@ -645,7 +646,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "rides-mia-corp-miami": {
    "demo": false,
@@ -685,7 +686,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "red-clay-detailing-ceramic-coatings-atlanta": {
    "demo": false,
@@ -725,7 +726,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "ak-detailing-llc-ceramic-coating-atlanta": {
    "demo": false,
@@ -765,7 +766,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "atlanta-luxury-window-tinting-atlanta": {
    "demo": false,
@@ -805,7 +806,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "apex-detail-performance-dallas": {
    "demo": false,
@@ -845,7 +846,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "gannon-ceramic-coatings-and-detailing-phoenix": {
    "demo": false,
@@ -885,7 +886,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "clarified-ceramic-coatings-paint-correcton-atlanta": {
    "demo": false,
@@ -925,7 +926,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "luxe-wrap-stars-luxe-films-atlanta": {
    "demo": false,
@@ -965,7 +966,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "dynamic-tint-phoenix": {
    "demo": false,
@@ -1005,7 +1006,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "clz-customz-vinyl-wraps-carters-car-care-auto-deta": {
    "demo": false,
@@ -1045,7 +1046,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "first-class-autosports-miami": {
    "demo": false,
@@ -1085,7 +1086,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "apogee-mobile-detailing-ceramic-coatings-atlanta": {
    "demo": false,
@@ -1125,7 +1126,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "atlanta-mobile-car-detailing-atlanta": {
    "demo": false,
@@ -1165,7 +1166,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "lejeune-ceramic-coating-paint-protection-atlanta": {
    "demo": false,
@@ -1205,7 +1206,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "formula-4-mobile-detailing-ceramic-coating-atlanta": {
    "demo": false,
@@ -1245,7 +1246,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "atlanta-ceramic-coating-ppf-atlanta": {
    "demo": false,
@@ -1285,7 +1286,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "ridinfresh-headliner-repair-ceramic-coating-window": {
    "demo": false,
@@ -1325,7 +1326,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "custompro-ppf-detail-atlanta": {
    "demo": false,
@@ -1365,7 +1366,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "top-tint-service-atlanta": {
    "demo": false,
@@ -1405,7 +1406,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "american-dreams-az-phoenix": {
    "demo": false,
@@ -1445,7 +1446,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "paint-protection-fort-worth-dallas": {
    "demo": false,
@@ -1485,7 +1486,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "quality-wraps-llc-atlanta": {
    "demo": false,
@@ -1525,7 +1526,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "flores-auto-detailing-phoenix": {
    "demo": false,
@@ -1565,7 +1566,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "bubble-drive-detailing-miami": {
    "demo": false,
@@ -1605,7 +1606,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "auto-this-world-coatings-detail-phoenix": {
    "demo": false,
@@ -1645,7 +1646,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "darksyde-window-tinting-paint-protection-film-viny": {
    "demo": false,
@@ -1685,7 +1686,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "all-clear-auto-glass-dfw-dallas": {
    "demo": false,
@@ -1725,7 +1726,7 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "protech-detailing-phoenix": {
    "demo": false,
@@ -1765,9 +1766,9 @@
     "og.png"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
-  "az-detailers-car-detailing-services-ppf-spray-phoe": {
+  "AZdetailers": {
    "demo": false,
    "data": {
     "businessName": "AZ Detailers - Car Detailing Services | PPF Spray",
@@ -1802,10 +1803,13 @@
     "ceramic-coating/index.html",
     "protection-film/index.html",
     "window-tint/index.html",
-    "og.png"
+    "og.png",
+    "custom.css"
    ],
    "made": "2026-10-20",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21",
+   "client": "clients/AZdetailers",
+   "pricesConfirmed": false
   }
  }
 }
