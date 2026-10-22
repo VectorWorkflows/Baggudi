@@ -2,13 +2,22 @@
    CLIENT UPDATE PORTAL
    Swaps the details prompt to match the update type, collects photos (resized
    on the phone so they upload quickly from the shop), and posts everything to
-   the endpoint in the form's action attribute.
+   the endpoint below.
 
-   Without JavaScript the form still works: it posts straight to the same
-   endpoint and the service shows its own thank-you page.
+   The form has no action in the HTML, so it only sends through this script.
    ========================================================================== */
 (() => {
   'use strict';
+
+  // FormSubmit endpoint as base64 pieces (base URL, mailbox, domain), joined
+  // only at send time so the inbox address appears nowhere in the page source.
+  // This keeps it from scrapers that read HTML, not from anyone who reads this
+  // file or watches the request. To change it, encode with btoa('...').
+  const ENDPOINT_PARTS = ['aHR0cHM6Ly9mb3Jtc3VibWl0LmNv', 'c3VwcG9ydA==', 'dmVjdG9yd29ya2Zsb3dzLmNvbQ=='];
+  const endpoint = () => {
+    const [base, mailbox, domain] = ENDPOINT_PARTS.map((s) => atob(s));
+    return `${base}/${mailbox}${String.fromCharCode(64)}${domain}`;
+  };
 
   const MAX_PHOTOS = 10;
   const MAX_TOTAL_MB = 9;               // FormSubmit caps all files at 10 MB together; 9 MiB stays under it either way it counts
@@ -328,11 +337,6 @@
     alertBox.hidden = true;
     if (!validate()) return;
 
-    if (form.action.includes('YOUR_FORM_ID')) {
-      showAlert('This form isn’t connected yet, so nothing was sent. Text Sam your update for now.');
-      return;
-    }
-
     if (photos.length) {
       setBusy('Preparing photos…');
       await Promise.all(photos.map((p) => p.ready));
@@ -350,7 +354,7 @@
     setBusy('Sending…');
     status.textContent = 'Sending your update.';
     try {
-      await post(form.action, data, (f) => {
+      await post(endpoint(), data, (f) => {
         // the server's reply comes after the last byte, so hold the bar short of full
         sendBtn.style.setProperty('--progress', Math.min(f, 0.96));
         if (photos.length) sendLabel.textContent = `Sending… ${Math.round(f * 100)}%`;

@@ -45,16 +45,16 @@
   <div class="shell" id="panel">
     <!--
       THE ENDPOINT
-      Everything posts to the form's action below; app.js reads it from here,
-      so this is the only line to change when swapping services. Any service
-      that takes a multipart POST and answers 2xx will work.
+      Lives in app.js (ENDPOINT_PARTS), encoded, and is put together only when
+      sending, so the inbox address never appears in this page. The form has
+      no action of its own: it can only be sent by app.js. Any service that
+      takes a multipart POST and answers 2xx will work.
         FormSubmit: https://formsubmit.co/<email>, emailing that address.
                     The first submission sends an activation email; nothing
                     is delivered until the link in it is clicked. Files are
                     capped at 10 MB in total (MAX_TOTAL_MB in app.js).
     -->
     <form class="core form" id="update-form"
-          action="https://formsubmit.co/support@vectorworkflows.com"
           method="POST" enctype="multipart/form-data">
 
       <input type="hidden" name="_subject" value="Website update from the client portal">
@@ -126,6 +126,7 @@
 
       <div class="send">
         <p class="alert" id="alert" role="alert" hidden><svg class="icon"><use href="#i-warn"/></svg><span></span></p>
+        <noscript><p class="alert"><svg class="icon"><use href="#i-warn"/></svg><span>This form needs JavaScript to send. Turn it on, or text Sam your update.</span></p></noscript>
         <button class="btn btn--primary" id="send" type="submit">
           <span class="btn__progress" aria-hidden="true"></span>
           <span class="btn__label">Send update</span>
