@@ -1,0 +1,92 @@
+{
+  "_about": "CONFIRMED FACTS ONLY. Leave a value as null (or an empty list) until the centre confirms it. In the draft a null shows as a dashed 'to confirm' chip; in production it is simply left out.",
+
+  "name": { "en": "Reliance Coaching Centre", "hi": "रिलायंस कोचिंग सेंटर" },
+  "name_parts": {
+    "first": { "en": "Reliance", "hi": "रिलायंस" },
+    "rest": { "en": "Coaching Centre", "hi": "कोचिंग सेंटर" }
+  },
+  "area": { "en": "Palam Colony (Raj Nagar I), New Delhi", "hi": "पालम कॉलोनी (राज नगर I), नई दिल्ली" },
+  "area_short": { "en": "Raj Nagar I, Palam Colony", "hi": "राज नगर I, पालम कॉलोनी" },
+
+  "address": {
+    "lines": [
+      "Rz 34h/2, Gali No. 4",
+      "Palam Colony, Raj Nagar I, Raj Nagar",
+      "New Delhi, Delhi 110077"
+    ],
+    "street": "Rz 34h/2, Gali No. 4, Palam Colony, Raj Nagar I, Raj Nagar",
+    "locality": "New Delhi",
+    "region": "Delhi",
+    "postal_code": "110077",
+    "country": "IN"
+  },
+  "maps_url": "https://maps.app.goo.gl/CfK5o3XFjVNeP9fB7",
+  "phone": {
+    "display": "+91 98187 58693",
+    "tel": "+919818758693",
+    "whatsapp": "919818758693"
+  },
+
+  "classes": [
+    { "id": "1", "short": "1", "label": { "en": "Class 1", "hi": "कक्षा 1" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "2", "short": "2", "label": { "en": "Class 2", "hi": "कक्षा 2" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "3", "short": "3", "label": { "en": "Class 3", "hi": "कक्षा 3" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "4", "short": "4", "label": { "en": "Class 4", "hi": "कक्षा 4" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "5", "short": "5", "label": { "en": "Class 5", "hi": "कक्षा 5" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "6", "short": "6", "label": { "en": "Class 6", "hi": "कक्षा 6" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "7", "short": "7", "label": { "en": "Class 7", "hi": "कक्षा 7" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "8", "short": "8", "label": { "en": "Class 8", "hi": "कक्षा 8" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "9", "short": "9", "label": { "en": "Class 9", "hi": "कक्षा 9" }, "subjects": [{ "en": "All subjects", "hi": "सभी विषय" }] },
+    { "id": "10", "short": "10", "label": { "en": "Class 10", "hi": "कक्षा 10" }, "subjects": null },
+    { "id": "11", "short": "11", "label": { "en": "Class 11", "hi": "कक्षा 11" }, "subjects": null },
+    {
+      "id": "commerce",
+      "short": { "en": "Commerce", "hi": "कॉमर्स" },
+      "label": { "en": "Commerce", "hi": "कॉमर्स" },
+      "subjects": [
+        { "en": "Accountancy", "hi": "अकाउंटेंसी" },
+        { "en": "Business Studies", "hi": "बिज़नेस स्टडीज़" },
+        { "en": "Economics", "hi": "अर्थशास्त्र" },
+        { "en": "Other commerce subjects", "hi": "कॉमर्स के अन्य विषय" }
+      ],
+      "teacher_count": 2,
+      "for_classes": null
+    }
+  ],
+
+  "people": [
+    { "id": "aditya-gaur", "name": "Aditya Gaur", "role": null, "subjects": null, "years": null, "approach": null }
+  ],
+
+  "boards": null,
+  "year_started": null,
+  "batch_size": null,
+  "google_rating": null,
+  "google_review_count": null,
+  "hours": null,
+  "landmark_directions": null,
+  "metro_note": null,
+  "parking_note": null,
+
+  "fees": {
+    "_about": "display is the single setting for how fees appear: \"table\" (full table), \"from\" (from ₹X) or \"ask\" (ask us). rows stay null until the centre confirms real fees.",
+    "display": "from",
+    "rows": null
+  },
+
+  "batches": null,
+  "practices": null,
+  "week": null,
+  "teachers": null,
+  "progress": null,
+  "reviews": null,
+  "admission_steps": null,
+  "faq": null,
+  "notices": null,
+
+  "photos": {},
+
+  "site_url": null,
+  "form_endpoint": ""
+}

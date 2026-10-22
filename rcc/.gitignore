@@ -1,0 +1,8 @@
+dist/
+.venv/
+__pycache__/
+*.pyc
+shots/
+
+# Working notes (brief, facts to confirm, Hindi to check) stay on this machine.
+notes/

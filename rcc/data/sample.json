@@ -1,0 +1,257 @@
+{
+  "_about": "SAMPLE CONTENT ONLY. Nothing in this file is a fact about the centre. It exists so the design can be seen in full, and every item renders with a red 'sample' stamp in the draft. The production build never shows this file, and fails if any of this text is found in its output. To make something real, write the confirmed version into centre.json under the same key. ==double equals== marks a highlighted phrase and [[double brackets]] a red-pen underline.",
+
+  "batches": [
+    { "id": "p12-a", "classes": ["1", "2"], "subject": { "en": "All subjects", "hi": "सभी विषय" }, "days": ["mon", "tue", "wed", "thu", "fri"], "start": "3:30", "end": "4:30", "period": "pm", "seats_left": 3 },
+    { "id": "p12-b", "classes": ["1", "2"], "subject": { "en": "All subjects", "hi": "सभी विषय" }, "days": ["mon", "tue", "wed", "thu", "fri"], "start": "4:30", "end": "5:30", "period": "pm", "seats_left": 0 },
+    { "id": "p35-a", "classes": ["3", "4", "5"], "subject": { "en": "All subjects", "hi": "सभी विषय" }, "days": ["mon", "tue", "wed", "thu", "fri"], "start": "3:15", "end": "4:30", "period": "pm", "seats_left": 5 },
+    { "id": "p35-b", "classes": ["3", "4", "5"], "subject": { "en": "All subjects", "hi": "सभी विषय" }, "days": ["mon", "tue", "wed", "thu", "fri"], "start": "4:30", "end": "5:45", "period": "pm", "seats_left": 1 },
+    { "id": "m67", "classes": ["6", "7"], "subject": { "en": "Maths", "hi": "गणित" }, "days": ["mon", "wed", "fri"], "start": "5:00", "end": "6:00", "period": "pm", "seats_left": 4 },
+    { "id": "s67", "classes": ["6", "7"], "subject": { "en": "Science", "hi": "विज्ञान" }, "days": ["tue", "thu", "sat"], "start": "5:00", "end": "6:00", "period": "pm", "seats_left": 6 },
+    { "id": "e678", "classes": ["6", "7", "8"], "subject": { "en": "English and Social Science", "hi": "अंग्रेज़ी और सामाजिक विज्ञान" }, "days": ["tue", "thu"], "start": "6:00", "end": "7:00", "period": "pm", "seats_left": 2 },
+    { "id": "m8", "classes": ["8"], "subject": { "en": "Maths", "hi": "गणित" }, "days": ["mon", "wed", "fri"], "start": "6:00", "end": "7:00", "period": "pm", "seats_left": 3 },
+    { "id": "s8", "classes": ["8"], "subject": { "en": "Science", "hi": "विज्ञान" }, "days": ["mon", "wed", "fri"], "start": "5:00", "end": "6:00", "period": "pm", "seats_left": 0 },
+    { "id": "m9", "classes": ["9"], "subject": { "en": "Maths", "hi": "गणित" }, "days": ["mon", "wed", "fri"], "start": "6:30", "end": "7:45", "period": "pm", "seats_left": 2 },
+    { "id": "s9", "classes": ["9"], "subject": { "en": "Science", "hi": "विज्ञान" }, "days": ["tue", "thu", "sat"], "start": "6:30", "end": "7:45", "period": "pm", "seats_left": 5 },
+    { "id": "m10", "classes": ["10"], "subject": { "en": "Maths", "hi": "गणित" }, "days": ["mon", "wed", "fri"], "start": "5:15", "end": "6:30", "period": "pm", "seats_left": 1 },
+    { "id": "s10", "classes": ["10"], "subject": { "en": "Science", "hi": "विज्ञान" }, "days": ["tue", "thu", "sat"], "start": "5:15", "end": "6:30", "period": "pm", "seats_left": 4 },
+    { "id": "m11", "classes": ["11"], "subject": { "en": "Maths", "hi": "गणित" }, "days": ["tue", "thu", "sat"], "start": "7:15", "end": "8:30", "period": "pm", "seats_left": 6 },
+    { "id": "c-acc", "classes": ["commerce"], "subject": { "en": "Accountancy", "hi": "अकाउंटेंसी" }, "days": ["mon", "wed", "fri"], "start": "7:00", "end": "8:15", "period": "pm", "seats_left": 3 },
+    { "id": "c-bst", "classes": ["commerce"], "subject": { "en": "Business Studies", "hi": "बिज़नेस स्टडीज़" }, "days": ["tue", "thu"], "start": "7:00", "end": "8:00", "period": "pm", "seats_left": 6 },
+    { "id": "c-eco", "classes": ["commerce"], "subject": { "en": "Economics", "hi": "अर्थशास्त्र" }, "days": ["sat"], "start": "4:30", "end": "6:30", "period": "pm", "seats_left": 4 }
+  ],
+
+  "practices": [
+    {
+      "title": {
+        "en": "A written test ==every Saturday==, and the marks reach you the same evening.",
+        "hi": "==हर शनिवार== लिखित टेस्ट, और अंक उसी शाम आप तक पहुँच जाते हैं।"
+      },
+      "detail": {
+        "en": "Twenty marks, forty minutes, on that week's chapters. We send the marks on WhatsApp by 8 pm, so Sunday can be spent on what went wrong.",
+        "hi": "बीस अंक, चालीस मिनट, उसी हफ़्ते के अध्यायों पर। अंक रात 8 बजे तक व्हाट्सऐप पर भेज दिए जाते हैं, ताकि रविवार उन्हीं ग़लतियों को सुधारने में लगे।"
+      }
+    },
+    {
+      "title": {
+        "en": "Every notebook is checked [[in red pen]], every week.",
+        "hi": "हर कॉपी हर हफ़्ते [[लाल पेन से]] जाँची जाती है।"
+      },
+      "detail": {
+        "en": "Not a signature at the bottom of the page. Each wrong step is marked where it went wrong, and your child redoes it in class before going home.",
+        "hi": "पन्ने के नीचे सिर्फ़ दस्तख़त नहीं। हर ग़लत क़दम पर वहीं निशान लगता है जहाँ ग़लती हुई, और बच्चा घर जाने से पहले क्लास में ही उसे दोबारा हल करता है।"
+      }
+    },
+    {
+      "title": {
+        "en": "==Fifteen minutes== with you on the first Sunday of every month.",
+        "hi": "हर महीने के पहले रविवार को आपके साथ ==पंद्रह मिनट==।"
+      },
+      "detail": {
+        "en": "One family at a time, with the test register open on the table. You leave knowing which chapters are strong and which need work.",
+        "hi": "एक बार में एक परिवार, और टेस्ट का रजिस्टर मेज़ पर खुला। जाते समय आपको पता होता है कि कौन-से अध्याय मज़बूत हैं और किन पर मेहनत चाहिए।"
+      }
+    }
+  ],
+
+  "week": {
+    "days": ["mon", "tue", "wed", "thu", "fri", "sat"],
+    "rows": [
+      { "time": "3:30", "cells": ["primary", "primary", "primary", "primary", "primary", "test"] },
+      { "time": "4:30", "cells": ["primary", "primary", "primary", "primary", "primary", "test"] },
+      { "time": "5:30", "cells": ["middle", "middle", "middle", "middle", "middle", "doubt"] },
+      { "time": "6:30", "cells": ["senior", "senior", "senior", "senior", "senior", "doubt"] },
+      { "time": "7:30", "cells": ["commerce", "commerce", "commerce", "commerce", "commerce", "none"] }
+    ],
+    "kinds": {
+      "primary": { "short": { "en": "1–5", "hi": "1–5" }, "long": { "en": "Classes 1 to 5", "hi": "कक्षा 1 से 5" } },
+      "middle": { "short": { "en": "6–8", "hi": "6–8" }, "long": { "en": "Classes 6 to 8", "hi": "कक्षा 6 से 8" } },
+      "senior": { "short": { "en": "9–11", "hi": "9–11" }, "long": { "en": "Classes 9 to 11", "hi": "कक्षा 9 से 11" } },
+      "commerce": { "short": { "en": "Com.", "hi": "कॉमर्स" }, "long": { "en": "Commerce", "hi": "कॉमर्स" } },
+      "test": { "short": { "en": "Test", "hi": "टेस्ट" }, "long": { "en": "Weekly test", "hi": "साप्ताहिक टेस्ट" } },
+      "doubt": { "short": { "en": "Doubts", "hi": "डाउट" }, "long": { "en": "Doubt hour", "hi": "डाउट क्लास" } },
+      "none": { "short": { "en": "" }, "long": { "en": "" } }
+    },
+    "notes": [
+      { "en": "Saturday: weekly test for every batch, then an open doubt hour.", "hi": "शनिवार: हर बैच का साप्ताहिक टेस्ट, फिर सबके लिए खुली डाउट क्लास।" },
+      { "en": "First Sunday of the month: parent meeting, 10 am to 1 pm.", "hi": "महीने का पहला रविवार: अभिभावक बैठक, सुबह 10 से दोपहर 1 बजे तक।" }
+    ]
+  },
+
+  "teachers": [
+    {
+      "id": "commerce-1",
+      "role_label": { "en": "Commerce teacher", "hi": "कॉमर्स शिक्षक" },
+      "subjects": { "en": "Accountancy, Business Studies", "hi": "अकाउंटेंसी, बिज़नेस स्टडीज़" },
+      "years": 11,
+      "approach": {
+        "en": "Starts each chapter with one fully solved ledger on the board, then the class builds the next one together.",
+        "hi": "हर अध्याय की शुरुआत बोर्ड पर एक पूरी तरह हल किए हुए लेजर से होती है, फिर अगला लेजर पूरी क्लास मिलकर बनाती है।"
+      }
+    },
+    {
+      "id": "commerce-2",
+      "role_label": { "en": "Commerce teacher", "hi": "कॉमर्स शिक्षक" },
+      "subjects": { "en": "Economics", "hi": "अर्थशास्त्र" },
+      "years": 7,
+      "approach": {
+        "en": "Teaches every graph twice: once with numbers from the textbook, once with prices from the Palam market.",
+        "hi": "हर ग्राफ़ दो बार पढ़ाते हैं: एक बार किताब के आँकड़ों से, एक बार पालम बाज़ार के दामों से।"
+      }
+    },
+    {
+      "id": "primary-1",
+      "role_label": { "en": "Teacher, Classes 1 to 5", "hi": "शिक्षक, कक्षा 1 से 5" },
+      "subjects": { "en": "All subjects", "hi": "सभी विषय" },
+      "years": 9,
+      "approach": {
+        "en": "Hears every child read aloud for five minutes a day, and keeps a page of the words each one got stuck on.",
+        "hi": "हर बच्चे से रोज़ पाँच मिनट ज़ोर से पढ़वाते हैं, और जिन शब्दों पर बच्चा अटका उनकी एक सूची रखते हैं।"
+      }
+    }
+  ],
+
+  "progress": [
+    {
+      "student": { "en": "Student A", "hi": "विद्यार्थी A" },
+      "class_label": { "en": "Class 9", "hi": "कक्षा 9" },
+      "columns": [{ "en": "April", "hi": "अप्रैल" }, { "en": "July", "hi": "जुलाई" }, { "en": "Half-yearly", "hi": "अर्धवार्षिक" }],
+      "out_of": { "en": "Marks out of 80", "hi": "80 में से अंक" },
+      "rows": [
+        { "subject": { "en": "Maths", "hi": "गणित" }, "marks": ["31", "44", "58"], "circle": 2 },
+        { "subject": { "en": "Science", "hi": "विज्ञान" }, "marks": ["47", "49", "55"], "circle": null }
+      ],
+      "remark": {
+        "en": "Was losing marks in algebra word problems. Two doubt hours a week on only those. Now attempts every question in the paper.",
+        "hi": "बीजगणित के शब्द-प्रश्नों में अंक कट रहे थे। हफ़्ते में दो डाउट क्लास सिर्फ़ उन्हीं पर। अब पेपर का हर सवाल हल करने की कोशिश करता है।"
+      }
+    },
+    {
+      "student": { "en": "Student B", "hi": "विद्यार्थी B" },
+      "class_label": { "en": "Class 6", "hi": "कक्षा 6" },
+      "columns": [{ "en": "April", "hi": "अप्रैल" }, { "en": "July", "hi": "जुलाई" }, { "en": "Half-yearly", "hi": "अर्धवार्षिक" }],
+      "out_of": { "en": "Marks out of 50", "hi": "50 में से अंक" },
+      "rows": [
+        { "subject": { "en": "English", "hi": "अंग्रेज़ी" }, "marks": ["19", "27", "36"], "circle": 2 },
+        { "subject": { "en": "Hindi", "hi": "हिंदी" }, "marks": ["33", "34", "38"], "circle": null }
+      ],
+      "remark": {
+        "en": "Could read but would not write. One short paragraph every day, corrected the same day. Spelling mistakes down from fourteen a page to three.",
+        "hi": "पढ़ लेता था पर लिखता नहीं था। रोज़ एक छोटा अनुच्छेद, उसी दिन जाँचा गया। वर्तनी की ग़लतियाँ एक पन्ने पर चौदह से घटकर तीन रह गईं।"
+      }
+    },
+    {
+      "student": { "en": "Student C", "hi": "विद्यार्थी C" },
+      "class_label": { "en": "Commerce", "hi": "कॉमर्स" },
+      "columns": [{ "en": "April", "hi": "अप्रैल" }, { "en": "July", "hi": "जुलाई" }, { "en": "Half-yearly", "hi": "अर्धवार्षिक" }],
+      "out_of": { "en": "Marks out of 80", "hi": "80 में से अंक" },
+      "rows": [
+        { "subject": { "en": "Accountancy", "hi": "अकाउंटेंसी" }, "marks": ["29", "41", "61"], "circle": 2 },
+        { "subject": { "en": "Economics", "hi": "अर्थशास्त्र" }, "marks": ["45", "52", "57"], "circle": null }
+      ],
+      "remark": {
+        "en": "Knew the rules but mixed up debit and credit under time pressure. Ten journal entries a day against the clock for six weeks.",
+        "hi": "नियम आते थे, पर समय के दबाव में डेबिट और क्रेडिट उलझ जाते थे। छह हफ़्ते तक रोज़ दस जर्नल एंट्री, घड़ी देखकर।"
+      }
+    }
+  ],
+
+  "reviews": [
+    {
+      "text": {
+        "en": "My daughter used to hide her maths notebook. Now she shows me the Saturday test before I ask for it.",
+        "hi": "मेरी बेटी अपनी गणित की कॉपी छिपा लेती थी। अब शनिवार का टेस्ट मेरे पूछने से पहले ही दिखा देती है।"
+      },
+      "by": { "en": "Parent of a Class 7 student", "hi": "कक्षा 7 के विद्यार्थी के अभिभावक" }
+    },
+    {
+      "text": {
+        "en": "They told me plainly which chapters my son was weak in, and what they would do about it. Nobody had done that before.",
+        "hi": "उन्होंने साफ़ बताया कि मेरा बेटा किन अध्यायों में कमज़ोर है और वे उसके लिए क्या करेंगे। पहले किसी ने ऐसा नहीं किया था।"
+      },
+      "by": { "en": "Parent of a Class 9 student", "hi": "कक्षा 9 के विद्यार्थी के अभिभावक" }
+    },
+    {
+      "text": {
+        "en": "Small batch, strict about homework, and the marks come on WhatsApp the same day.",
+        "hi": "छोटा बैच, होमवर्क पर सख़्ती, और अंक उसी दिन व्हाट्सऐप पर आ जाते हैं।"
+      },
+      "by": { "en": "Parent of a Class 4 student", "hi": "कक्षा 4 के विद्यार्थी के अभिभावक" }
+    }
+  ],
+
+  "fees": {
+    "rows": [
+      { "group": { "en": "Classes 1 to 5", "hi": "कक्षा 1 से 5" }, "what": { "en": "All subjects", "hi": "सभी विषय" }, "from": 1200 },
+      { "group": { "en": "Classes 6 to 8", "hi": "कक्षा 6 से 8" }, "what": { "en": "All subjects", "hi": "सभी विषय" }, "from": 1800 },
+      { "group": { "en": "Classes 9 to 11", "hi": "कक्षा 9 से 11" }, "what": { "en": "Per subject", "hi": "प्रति विषय" }, "from": 1000 },
+      { "group": { "en": "Commerce", "hi": "कॉमर्स" }, "what": { "en": "Per subject", "hi": "प्रति विषय" }, "from": 1500 }
+    ]
+  },
+
+  "admission_steps": [
+    {
+      "title": { "en": "Free demo class", "hi": "फ़्री डेमो क्लास" },
+      "detail": { "en": "Your child sits in one full class, in the batch they would join.", "hi": "आपका बच्चा उसी बैच की एक पूरी क्लास में बैठता है जिसमें उसे पढ़ना है।" }
+    },
+    {
+      "title": { "en": "Admission form", "hi": "प्रवेश फ़ॉर्म" },
+      "detail": { "en": "One page, filled at the centre. It takes about five minutes.", "hi": "एक पन्ना, सेंटर पर ही भरा जाता है। क़रीब पाँच मिनट लगते हैं।" }
+    },
+    {
+      "title": { "en": "Documents", "hi": "दस्तावेज़" },
+      "detail": { "en": "Last report card, one photograph, and a parent's phone number.", "hi": "पिछली रिपोर्ट कार्ड, एक फ़ोटो और अभिभावक का फ़ोन नंबर।" }
+    },
+    {
+      "title": { "en": "First month's fee", "hi": "पहले महीने की फ़ीस" },
+      "detail": { "en": "Cash or UPI. You get a signed receipt the same day.", "hi": "नक़द या यूपीआई। उसी दिन दस्तख़त की हुई रसीद मिलती है।" }
+    }
+  ],
+
+  "faq": [
+    {
+      "q": { "en": "Is the demo class really free?", "hi": "क्या डेमो क्लास सच में मुफ़्त है?" },
+      "a": {
+        "en": "Yes. One full class in the batch your child would join. There is no fee for it and nothing to sign before it.",
+        "hi": "हाँ। उसी बैच की एक पूरी क्लास जिसमें आपका बच्चा पढ़ेगा। इसकी कोई फ़ीस नहीं है और पहले कुछ भी साइन नहीं करना होता।"
+      }
+    },
+    {
+      "q": { "en": "Which boards do you teach?", "hi": "आप किन बोर्ड के लिए पढ़ाते हैं?" },
+      "a": {
+        "en": "CBSE, from the NCERT books your child uses at school. Tell us the school and we will follow its exam dates.",
+        "hi": "सीबीएसई, उन्हीं एनसीईआरटी किताबों से जो बच्चा स्कूल में पढ़ता है। स्कूल का नाम बताइए, हम उसकी परीक्षा की तारीख़ों के हिसाब से चलेंगे।"
+      }
+    },
+    {
+      "q": { "en": "How many children are in one batch?", "hi": "एक बैच में कितने बच्चे होते हैं?" },
+      "a": {
+        "en": "Twelve at the most. If a batch fills up we open a second one at another time rather than add chairs.",
+        "hi": "ज़्यादा से ज़्यादा बारह। बैच भर जाए तो हम कुर्सियाँ बढ़ाने के बजाय दूसरे समय पर नया बैच खोलते हैं।"
+      }
+    },
+    {
+      "q": { "en": "Do you teach in Hindi or in English?", "hi": "आप हिंदी में पढ़ाते हैं या अंग्रेज़ी में?" },
+      "a": {
+        "en": "Both. We explain in the language your child understands, and write in the language of the school's books.",
+        "hi": "दोनों में। समझाते उस भाषा में हैं जो बच्चा समझता है, और लिखवाते उस भाषा में हैं जो स्कूल की किताबों की है।"
+      }
+    },
+    {
+      "q": { "en": "How will I know how my child is doing?", "hi": "मुझे कैसे पता चलेगा कि मेरा बच्चा कैसा कर रहा है?" },
+      "a": {
+        "en": "Saturday's test marks reach you on WhatsApp the same evening, and we meet every parent on the first Sunday of the month.",
+        "hi": "शनिवार के टेस्ट के अंक उसी शाम व्हाट्सऐप पर पहुँच जाते हैं, और महीने के पहले रविवार को हम हर अभिभावक से मिलते हैं।"
+      }
+    },
+    {
+      "q": { "en": "What if my child misses a class?", "hi": "अगर बच्चे की कोई क्लास छूट जाए तो?" },
+      "a": {
+        "en": "Send a message on WhatsApp. The missed topic is covered again in Saturday's doubt hour, at no extra fee.",
+        "hi": "व्हाट्सऐप पर संदेश भेज दीजिए। छूटा हुआ टॉपिक शनिवार की डाउट क्लास में दोबारा पढ़ाया जाता है, बिना किसी अतिरिक्त फ़ीस के।"
+      }
+    }
+  ],
+
+  "notices": []
+}

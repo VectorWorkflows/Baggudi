@@ -1,0 +1,204 @@
+{
+  "_about": "Every word of interface copy, in English (en) and Hindi (hi). This file holds wording only, never facts about the centre: facts live in centre.json, sample content in sample.json. ==double equals== marks a highlighted phrase and [[double brackets]] a red-pen underline. The build fails if a Hindi page shows English, so every hi value must be filled.",
+
+  "meta": {
+    "home_title": { "en": "Reliance Coaching Centre, Palam Colony | Classes 1 to 11 and Commerce", "hi": "रिलायंस कोचिंग सेंटर, पालम कॉलोनी | कक्षा 1 से 11 और कॉमर्स" },
+    "home_description": { "en": "Coaching for Classes 1 to 11 and Commerce in Raj Nagar I, Palam Colony, New Delhi. Find your child's batch and book a free demo class.", "hi": "राज नगर I, पालम कॉलोनी, नई दिल्ली में कक्षा 1 से 11 और कॉमर्स की कोचिंग। अपने बच्चे का बैच देखें और फ़्री डेमो क्लास बुक करें।" },
+    "notfound_title": { "en": "Page not found | Reliance Coaching Centre, Palam Colony", "hi": "पृष्ठ नहीं मिला | रिलायंस कोचिंग सेंटर, पालम कॉलोनी" }
+  },
+
+  "a11y": {
+    "skip": { "en": "Skip to content", "hi": "मुख्य सामग्री पर जाएँ" },
+    "menu": { "en": "Menu", "hi": "मेन्यू" },
+    "main_nav": { "en": "Main", "hi": "मुख्य" },
+    "language": { "en": "Language", "hi": "भाषा" },
+    "quick_actions": { "en": "Quick actions", "hi": "त्वरित विकल्प" },
+    "footer_nav": { "en": "Pages", "hi": "पृष्ठ" },
+    "home_link": { "en": "Reliance Coaching Centre, home", "hi": "रिलायंस कोचिंग सेंटर, मुख्य पृष्ठ" },
+    "call_number": { "en": "Call {phone}", "hi": "{phone} पर कॉल करें" }
+  },
+
+  "nav": {
+    "home": { "en": "Home", "hi": "मुख्य पृष्ठ" },
+    "classes": { "en": "Classes & Batches", "hi": "कक्षाएँ और बैच" },
+    "admissions": { "en": "Admissions & Fees", "hi": "प्रवेश और फ़ीस" },
+    "demo": { "en": "Free Demo", "hi": "फ़्री डेमो" },
+    "about": { "en": "About", "hi": "हमारे बारे में" },
+    "visit": { "en": "Visit", "hi": "पता और रास्ता" },
+    "results": { "en": "Results", "hi": "परिणाम" },
+    "parents": { "en": "Parents' Corner", "hi": "अभिभावक कोना" },
+    "privacy": { "en": "Privacy", "hi": "निजता" }
+  },
+
+  "cta": {
+    "demo": { "en": "Book a free demo", "hi": "फ़्री डेमो बुक करें" },
+    "demo_short": { "en": "Free demo", "hi": "फ़्री डेमो" },
+    "whatsapp": { "en": "WhatsApp us", "hi": "व्हाट्सऐप करें" },
+    "whatsapp_short": { "en": "WhatsApp", "hi": "व्हाट्सऐप" },
+    "call": { "en": "Call", "hi": "कॉल" },
+    "maps": { "en": "Open in Google Maps", "hi": "Google Maps में खोलें" }
+  },
+
+  "whatsapp": {
+    "general": { "en": "Hello, I would like to know about classes at Reliance Coaching Centre.", "hi": "नमस्ते, मुझे रिलायंस कोचिंग सेंटर की कक्षाओं के बारे में जानकारी चाहिए।" },
+    "batch": { "en": "Hello, I would like to ask about this batch at Reliance Coaching Centre: {batch}.", "hi": "नमस्ते, मुझे रिलायंस कोचिंग सेंटर के इस बैच के बारे में पूछना है: {batch}." },
+    "question": { "en": "Hello, I have a question about Reliance Coaching Centre: ", "hi": "नमस्ते, रिलायंस कोचिंग सेंटर के बारे में मेरा एक सवाल है: " }
+  },
+
+  "draft": {
+    "stamp": { "en": "sample", "hi": "नमूना" },
+    "chip": { "en": "to confirm", "hi": "पुष्टि बाकी" },
+    "photo": { "en": "Photo", "hi": "फ़ोटो" }
+  },
+
+  "days": {
+    "mon": { "en": "Mon", "hi": "सोम" },
+    "tue": { "en": "Tue", "hi": "मंगल" },
+    "wed": { "en": "Wed", "hi": "बुध" },
+    "thu": { "en": "Thu", "hi": "गुरु" },
+    "fri": { "en": "Fri", "hi": "शुक्र" },
+    "sat": { "en": "Sat", "hi": "शनि" }
+  },
+  "day_letters": {
+    "mon": { "en": "M", "hi": "सो" },
+    "tue": { "en": "T", "hi": "मं" },
+    "wed": { "en": "W", "hi": "बु" },
+    "thu": { "en": "T", "hi": "गु" },
+    "fri": { "en": "F", "hi": "शु" },
+    "sat": { "en": "S", "hi": "श" }
+  },
+  "time": {
+    "pm": { "en": "{start}–{end} pm", "hi": "शाम {start}–{end} बजे" },
+    "am": { "en": "{start}–{end} am", "hi": "सुबह {start}–{end} बजे" }
+  },
+
+  "hero": {
+    "note": { "en": "The demo class is free.", "hi": "डेमो क्लास मुफ़्त है।" },
+    "title": { "en": "==All subjects== for Classes 1 to 9", "hi": "कक्षा 1 से 9 के ==सभी विषय==" },
+    "insert": { "en": "plus Classes 10, 11 and Commerce", "hi": "साथ ही कक्षा 10, 11 और कॉमर्स" },
+    "place": { "en": "In Gali No. 4, Raj Nagar I, Palam Colony.", "hi": "गली नं. 4, राज नगर I, पालम कॉलोनी में।" },
+    "since": { "en": "Running since {year}", "hi": "{year} से चल रहा है" },
+    "batch_size": { "en": "At most {n} children in a batch", "hi": "एक बैच में अधिकतम {n} बच्चे" },
+    "rating": { "en": "{rating} on Google", "hi": "Google पर {rating}" },
+    "confirm_year": { "en": "year started", "hi": "शुरू होने का वर्ष" },
+    "confirm_batch_size": { "en": "batch size", "hi": "बैच में बच्चों की संख्या" },
+    "confirm_rating": { "en": "Google rating", "hi": "Google रेटिंग" }
+  },
+
+  "finder": {
+    "title": { "en": "Find your batch", "hi": "अपना बैच चुनें" },
+    "step_class": { "en": "Which class is your child in?", "hi": "आपका बच्चा किस कक्षा में है?" },
+    "step_subject": { "en": "Subject", "hi": "विषय" },
+    "all": { "en": "All", "hi": "सभी" },
+    "class_word": { "en": "Class", "hi": "कक्षा" },
+    "classes_word": { "en": "Classes", "hi": "कक्षा" },
+    "and": { "en": "and", "hi": "और" },
+    "days": { "en": "Days", "hi": "दिन" },
+    "time": { "en": "Time", "hi": "समय" },
+    "teacher": { "en": "Teacher", "hi": "शिक्षक" },
+    "seats_one": { "en": "1 seat left", "hi": "1 सीट खाली" },
+    "seats_many": { "en": "{n} seats left", "hi": "{n} सीटें खाली" },
+    "seats_none": { "en": "No seats left", "hi": "सीटें भर चुकी हैं" },
+    "count_one": { "en": "1 batch for {cls}", "hi": "{cls} के लिए 1 बैच" },
+    "count_many": { "en": "{n} batches for {cls}", "hi": "{cls} के लिए {n} बैच" },
+    "book": { "en": "Book a demo for this batch", "hi": "इस बैच का डेमो बुक करें" },
+    "ask": { "en": "Ask about this batch", "hi": "इस बैच के बारे में पूछें" },
+    "empty": { "en": "No batch is listed for this yet. Send us a WhatsApp message and we will tell you the timing.", "hi": "इसके लिए अभी कोई बैच नहीं दिखाया गया है। व्हाट्सऐप पर संदेश भेजें, हम समय बता देंगे।" },
+    "confirm_teacher": { "en": "teacher", "hi": "शिक्षक का नाम" },
+    "confirm_subjects": { "en": "subjects for {cls}", "hi": "{cls} के विषय" },
+    "confirm_commerce_classes": { "en": "which classes Commerce is for", "hi": "कॉमर्स किन कक्षाओं के लिए है" }
+  },
+
+  "why": {
+    "title": { "en": "Why parents choose us", "hi": "अभिभावक हमें क्यों चुनते हैं" }
+  },
+
+  "week": {
+    "title": { "en": "A week here", "hi": "यहाँ का एक हफ़्ता" },
+    "time": { "en": "Time", "hi": "समय" },
+    "caption": { "en": "Weekly timetable", "hi": "साप्ताहिक समय-सारणी" },
+    "link": { "en": "See every batch and its timing", "hi": "सभी बैच और उनका समय देखें" }
+  },
+
+  "teachers": {
+    "title": { "en": "Teachers", "hi": "शिक्षक" },
+    "years": { "en": "{n} years teaching", "hi": "{n} वर्षों से पढ़ा रहे हैं" },
+    "link": { "en": "Meet the teachers", "hi": "शिक्षकों से मिलिए" },
+    "confirm_name": { "en": "name", "hi": "नाम" },
+    "confirm_role": { "en": "role", "hi": "भूमिका" },
+    "confirm_subjects": { "en": "subjects", "hi": "विषय" },
+    "confirm_years": { "en": "years teaching", "hi": "पढ़ाने का अनुभव" },
+    "confirm_approach": { "en": "one line on how they teach", "hi": "पढ़ाने के तरीक़े पर एक पंक्ति" }
+  },
+
+  "progress": {
+    "title": { "en": "Progress", "hi": "प्रगति" },
+    "card_title": { "en": "Progress report", "hi": "प्रगति रिपोर्ट" },
+    "subject": { "en": "Subject", "hi": "विषय" },
+    "remarks": { "en": "Teacher's remarks", "hi": "शिक्षक की टिप्पणी" },
+    "intro": { "en": "Names are never shown. A child appears here only as a letter and a class.", "hi": "नाम कभी नहीं दिखाए जाते। यहाँ हर बच्चा सिर्फ़ एक अक्षर और कक्षा से पहचाना जाता है।" }
+  },
+
+  "reviews": {
+    "title": { "en": "What parents say", "hi": "अभिभावक क्या कहते हैं" },
+    "link": { "en": "Read reviews on Google", "hi": "Google पर समीक्षाएँ पढ़ें" },
+    "rating": { "en": "{rating} out of 5 on Google", "hi": "Google पर 5 में से {rating}" },
+    "confirm_rating": { "en": "Google rating and number of reviews", "hi": "Google रेटिंग और समीक्षाओं की संख्या" }
+  },
+
+  "centre": {
+    "title": { "en": "The centre", "hi": "सेंटर" }
+  },
+
+  "fees": {
+    "title": { "en": "Fees and admission", "hi": "फ़ीस और प्रवेश" },
+    "steps_title": { "en": "How admission works", "hi": "प्रवेश कैसे होता है" },
+    "fees_title": { "en": "Monthly fees", "hi": "मासिक फ़ीस" },
+    "from_amount": { "en": "from {amount}", "hi": "{amount} से" },
+    "ask": { "en": "Fees depend on the class and the subjects. Ask us and we will tell you the exact amount.", "hi": "फ़ीस कक्षा और विषयों पर निर्भर करती है। हमसे पूछिए, हम सही रक़म बता देंगे।" },
+    "link": { "en": "Fees, documents and how to pay", "hi": "फ़ीस, दस्तावेज़ और भुगतान की जानकारी" },
+    "confirm_display": { "en": "how fees should be shown (full table, from ₹X, or ask us)", "hi": "फ़ीस कैसे दिखाई जाए (पूरी तालिका, ₹X से, या हमसे पूछें)" }
+  },
+
+  "faq": {
+    "title": { "en": "Questions parents ask", "hi": "अभिभावकों के सवाल" },
+    "ask_note": { "en": "Something else?", "hi": "कुछ और पूछना है?" },
+    "ask_link": { "en": "Ask on WhatsApp", "hi": "व्हाट्सऐप पर पूछें" }
+  },
+
+  "find": {
+    "title": { "en": "Find us", "hi": "हम तक कैसे पहुँचें" },
+    "address": { "en": "Address", "hi": "पता" },
+    "directions": { "en": "Directions", "hi": "रास्ता" },
+    "hours": { "en": "Hours", "hi": "समय" },
+    "phone": { "en": "Phone", "hi": "फ़ोन" },
+    "confirm_directions": { "en": "landmark directions from the nearest metro gate", "hi": "नज़दीकी मेट्रो गेट से रास्ते की जानकारी" },
+    "confirm_hours": { "en": "opening days and hours", "hi": "खुलने के दिन और समय" }
+  },
+
+  "closing": {
+    "line": { "en": "Come and sit in one class. [[Then decide.]]", "hi": "एक क्लास में बैठकर देखिए। [[फिर तय कीजिए।]]" }
+  },
+
+  "footer": {
+    "by": { "en": "Website by", "hi": "वेबसाइट:" },
+    "confirm_hours": { "en": "opening days and hours", "hi": "खुलने के दिन और समय" }
+  },
+
+  "notfound": {
+    "roll": { "en": "Roll no. 404", "hi": "रोल नं. 404" },
+    "absent": { "en": "Absent", "hi": "अनुपस्थित" },
+    "title": { "en": "This page skipped class.", "hi": "यह पृष्ठ आज क्लास में नहीं आया।" },
+    "body": { "en": "The page you asked for is not here. It may have moved, or the link may be wrong.", "hi": "आपने जो पृष्ठ माँगा वह यहाँ नहीं है। हो सकता है वह हट गया हो, या लिंक ग़लत हो।" },
+    "home": { "en": "Go to the home page", "hi": "मुख्य पृष्ठ पर जाएँ" },
+    "demo": { "en": "Book a free demo", "hi": "फ़्री डेमो बुक करें" }
+  },
+
+  "photos": {
+    "classroom": { "label": { "en": "classroom from the back corner, daylight, a lesson in progress", "hi": "पीछे के कोने से कक्षा, दिन की रोशनी में, पढ़ाई चलती हुई" }, "ratio": "4 / 3" },
+    "board": { "label": { "en": "the board mid-lesson, a worked sum half written", "hi": "पढ़ाई के बीच का बोर्ड, आधा हल किया हुआ सवाल" }, "ratio": "1 / 1" },
+    "notebook": { "label": { "en": "an open notebook, red-pen corrections visible", "hi": "खुली कॉपी, लाल पेन से की गई जाँच दिखती हुई" }, "ratio": "1 / 1" },
+    "entrance": { "label": { "en": "the entrance from Gali No. 4, signboard readable", "hi": "गली नं. 4 से प्रवेश द्वार, बोर्ड साफ़ पढ़ने लायक" }, "ratio": "4 / 5" },
+    "teacher": { "label": { "en": "{name}, at the board, daylight", "hi": "{name}, बोर्ड पर, दिन की रोशनी में" }, "ratio": "4 / 5" }
+  }
+}

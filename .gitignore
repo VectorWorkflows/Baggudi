@@ -8,3 +8,6 @@ Thumbs.db
 desktop.ini
 .DS_Store
 .vscode/
+
+# Separate repo (the detailing kit source); it is not part of this site.
+/Sick Site/
