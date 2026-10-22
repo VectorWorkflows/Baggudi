@@ -2,7 +2,7 @@
  "about": "Written by make_demo.py in the detailing kit. It lists every file that script has published here; it only ever overwrites or removes these.",
  "kit": {
   "version": "6cc1711856322db1d9b039b8a99b8dcbd0c9ba3c",
-  "built": "2026-10-21T22:49:26",
+  "built": "2026-10-22T12:01:47",
   "files": [
    "assets/01-1280-C7ypAaum.webp",
    "assets/01-1280-Sjd4czha.avif",
@@ -1810,6 +1810,4246 @@
    "updated": "2026-10-21",
    "client": "clients/AZdetailers",
    "pricesConfirmed": false
+  },
+  "omar-s-window-tinting-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "OMAR'S WINDOW TINTING",
+    "brand": "OMAR'S WINDOW TINTING",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 717-8618",
+    "address": "2130 W Camelback Rd, Phoenix, AZ 85015, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4660306279365081242&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 345,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJFRz2HSUTK4cRmvgTpt67rEA"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "elite-ceramic-coating-and-restoration-services-ecc": {
+   "demo": false,
+   "data": {
+    "businessName": "Elite Ceramic Coating and Restoration Services (ECCR)",
+    "brand": "Elite Ceramic Coating and Restoration Services (ECCR)",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(844) 708-3227",
+    "address": "155 Mansell Pl suit 100, Roswell, GA 30076, USA",
+    "mapsUrl": "https://maps.google.com/?cid=15402159409824145938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 125,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJs0j6Q8919YgREiKCDGF2v9U"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "luxe-pros-ppf-tint-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Luxe Pros PPF & Tint",
+    "brand": "Luxe Pros PPF & Tint",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 742-0724",
+    "address": "230 W Baseline Rd #106, Tempe, AZ 85283, USA",
+    "mapsUrl": "https://maps.google.com/?cid=15689591728199002600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 27,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJd2FwfRUHK4cR6Gk1voygvNk"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "az-window-tint-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "AZ Window Tint",
+    "brand": "AZ Window Tint",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 299-8978",
+    "address": "702 N 35th Ave, Phoenix, AZ 85009, USA",
+    "mapsUrl": "https://maps.google.com/?cid=12712890804977748859&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 25,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJLc5V94wTK4cRe0sH09RCbbA"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "aesthetic-window-tint-ppf-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Aesthetic Window Tint & PPF",
+    "brand": "Aesthetic Window Tint & PPF",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(972) 710-7544",
+    "address": "2750 Northaven Rd Ste 105A, Dallas, TX 75229, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1262775552330650877&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 40,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJixVaq1snTIYR_VS3o6xHhhE"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "clear-bra-north-dallas-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Clear Bra North Dallas",
+    "brand": "Clear Bra North Dallas",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 521-9388",
+    "address": "1325 W Whitlock Ln Suite 309, Carrollton, TX 75006, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10049721785015766168&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 66,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJM-QpSqcmTIYRmIxev7fId4s"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "neo-wash-auto-spa-mobile-car-wash-detailing-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Neo Wash Auto Spa | Mobile Car Wash & Detailing Miami",
+    "brand": "Neo Wash Auto Spa | Mobile Car Wash & Detailing Miami",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(305) 345-4924",
+    "address": "N Miami Ave, Miami, FL 33136, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13342622852829087174&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 77,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ2Tzo52Sz2YgRxgXj2sqEKrk"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "unick-auto-detailing-ceramic-coating-paint-correct": {
+   "demo": false,
+   "data": {
+    "businessName": "Unick Auto Detailing - Ceramic Coating Paint Correction",
+    "brand": "Unick Auto Detailing - Ceramic Coating Paint Correction",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 622-7620",
+    "address": "4030 Estepona Ave, Doral, FL 33178, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10066868025101680445&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 39,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ06jxJki52YgRPX_s3CGztIs"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "unlimited-wraps-xpel-exclusive-dealer-miami-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Unlimited Wraps - Xpel Exclusive Dealer Miami",
+    "brand": "Unlimited Wraps - Xpel Exclusive Dealer Miami",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 505-6162",
+    "address": "1835 NW 79th Ave, Doral, FL 33126, USA",
+    "mapsUrl": "https://maps.google.com/?cid=782863630175750229&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 71,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ59ITd_DH2YgRVcgy6FJK3Qo"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "rpfilms-tints-ppf-and-wraps-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "RPFilms (Tints, PPF, and Wraps)",
+    "brand": "RPFilms (Tints, PPF, and Wraps)",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(754) 465-9721",
+    "address": "3436 W 84th St Ste 109, Hialeah, FL 33018, USA",
+    "mapsUrl": "https://maps.google.com/?cid=7551901457814826796&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 42,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJZzjIGgCn2YgRLK_OO12-zWg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "dirty-horse-detailing-atlanta-ppf-ceramic-coating": {
+   "demo": false,
+   "data": {
+    "businessName": "Dirty Horse Detailing Atlanta - PPF, Ceramic Coating, and Car Wraps",
+    "brand": "Dirty Horse Detailing Atlanta - PPF, Ceramic Coating, and Car Wraps",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(470) 664-2500",
+    "address": "1380 Atlantic Dr NW, Atlanta, GA 30363, USA",
+    "mapsUrl": "https://maps.google.com/?cid=334324023273886942&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 30,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJcYLLDUUF9YgR3pQeh-3BowQ"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "impressive-films-paint-protection-film-l-ceramic-c": {
+   "demo": false,
+   "data": {
+    "businessName": "Impressive Films - Paint Protection Film l Ceramic Coating l Window Tinting Specialists",
+    "brand": "Impressive Films - Paint Protection Film l Ceramic Coating l Window Tinting Specialists",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 384-8302",
+    "address": "1525 Senoia Rd Ste C, Tyrone, GA 30290, USA",
+    "mapsUrl": "https://maps.google.com/?cid=14564956936315631427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 109,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJkUZMbHzp9IgRQ3f0RSofIco"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "defyne-cars-ppf-tint-ceramic-wrap-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Defyne Cars | PPF, Tint, Ceramic & Wrap",
+    "brand": "Defyne Cars | PPF, Tint, Ceramic & Wrap",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(855) 233-3963",
+    "address": "2330 Windy Hill Rd SE, Marietta, GA 30067, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6749065953150079055&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 69,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJVVVVEAQR9YgRT5Ax77l_qV0"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ppf-auto-spa-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "PPF Auto Spa",
+    "brand": "PPF Auto Spa",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 242-4746",
+    "address": "1785 White Cir NW, Marietta, GA 30066, USA",
+    "mapsUrl": "https://maps.google.com/?cid=8707259901848687021&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 31,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJhXufXAAV9YgRrZGxaL9m1ng"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "atlanta-auto-therapy-paint-protection-film-tint-at": {
+   "demo": false,
+   "data": {
+    "businessName": "Atlanta Auto Therapy | Paint Protection film & Tint",
+    "brand": "Atlanta Auto Therapy | Paint Protection film & Tint",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(470) 767-1605",
+    "address": "5720 N Commerce Ct unit 5, Alpharetta, GA 30004, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13139970860850204897&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 16,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJjXTNT2ad9YgR4dD1H-GNWrY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "boss-babe-mobile-tinting-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Boss Babe Mobile Tinting",
+    "brand": "Boss Babe Mobile Tinting",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(678) 749-1141",
+    "address": "1000 Barone Ave, Atlanta, GA 30329, USA",
+    "mapsUrl": "https://maps.google.com/?cid=15044539409838083022&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 42,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJiZChh4sH9YgRzovDROLwyNA"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "the-bays-mesa-ceramic-coatings-full-service-detail": {
+   "demo": false,
+   "data": {
+    "businessName": "The Bays Mesa | Ceramic Coatings, Full Service Detailing, DIY detailing, Window Tint, & Paint Protection Film",
+    "brand": "The Bays Mesa | Ceramic Coatings, Full Service Detailing, DIY detailing, Window Tint, & Paint Protection Film",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 356-3194",
+    "address": "2450 W Broadway Rd #113, Mesa, AZ 85202, USA",
+    "mapsUrl": "https://maps.google.com/?cid=590841381139613425&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 60,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJAUxIKS8JK4cR8YZtERsXMwg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ascension-auto-lab-dallas-window-tint-ppf-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Ascension Auto Lab Dallas - Window Tint & PPF",
+    "brand": "Ascension Auto Lab Dallas - Window Tint & PPF",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(972) 284-0794",
+    "address": "1206 Luke St, Irving, TX 75061, USA",
+    "mapsUrl": "https://maps.google.com/?cid=2341825053899255678&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 73,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJU-C8FeSDToYRfm_Gn3rVfyA"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "hampton-auto-detailing-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Hampton Auto Detailing",
+    "brand": "Hampton Auto Detailing",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(214) 486-0547",
+    "address": "4915 Gaston Ave, Dallas, TX 75214, USA",
+    "mapsUrl": "https://maps.google.com/?cid=16945032376272922696&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 105,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJYXWoqhiZToYRSKg95yrZKOs"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "wulf-window-tinting-llc-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "WULF Window Tinting LLC",
+    "brand": "WULF Window Tinting",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(623) 330-0831",
+    "address": "1509 S 122nd Ave, Avondale, AZ 85323, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13405136424983481715&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 204,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJn6hXe0k_K4cRc03KGI6cCLo"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "alset-auto-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "ALSET Auto",
+    "brand": "ALSET Auto",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(214) 624-7609",
+    "address": "2636 Walnut Hill Ln Ste 110B, Dallas, TX 75229, USA",
+    "mapsUrl": "https://maps.google.com/?cid=7039522026281836347&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 143,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJK-p4r_SdToYROx8RZfxnsWE"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "mobile-window-tint-wj-dallas-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Mobile Window Tint WJ Dallas",
+    "brand": "Mobile Window Tint WJ Dallas",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(214) 772-5971",
+    "address": "2607 Rampart St, Dallas, TX 75235, USA",
+    "mapsUrl": "https://maps.google.com/?cid=8451350070828657220&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 143,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJPyQ3VwmfToYRROo2vBw6SXU"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "sunvibes-mobile-detailing-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "SUNVIBES MOBILE DETAILING",
+    "brand": "SUNVIBES MOBILE DETAILING",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 441-4832",
+    "address": "112 Cambridge Dr, Cedar Hill, TX 75104, USA",
+    "mapsUrl": "https://maps.google.com/?cid=12758444828403659000&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 274,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJF3Fkz6KNToYR-HBra_kZD7E"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "maxximus-auto-detailing-and-ceramic-coatings-phoen": {
+   "demo": false,
+   "data": {
+    "businessName": "Maxximus Auto Detailing and Ceramic Coatings",
+    "brand": "Maxximus Auto Detailing and Ceramic Coatings",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 476-4116",
+    "address": "5201 N 62nd Ave, Glendale, AZ 85301, USA",
+    "mapsUrl": "https://maps.google.com/?cid=11104686514021391551&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 346,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ8SyLeBJrK4cRv9xQoozFG5o"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ppf-window-tint-ceramic-coating-xpel-by-eurocars-d": {
+   "demo": false,
+   "data": {
+    "businessName": "PPF, Window Tint, Ceramic Coating, XPEL by EuroCars Detail",
+    "brand": "PPF, Window Tint, Ceramic Coating, XPEL by EuroCars Detail",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 699-5358",
+    "address": "3143 E Greenway Rd #805, Phoenix, AZ 85032, USA",
+    "mapsUrl": "https://maps.google.com/?cid=7375087629565075091&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 160,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJGYeVDzFxK4cRk56ayx-TWWY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "jett-s-mobile-detailing-ceramic-coatings-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Jett's Mobile Detailing & Ceramic Coatings",
+    "brand": "Jett's Mobile Detailing & Ceramic Coatings",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 691-6927",
+    "address": "15475 N Greenway Hayden Loop, Scottsdale, AZ 85260, USA",
+    "mapsUrl": "https://maps.google.com/?cid=47551222041562440&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 139,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ78B0cq5-DqoRSE1sopXvqAA"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "elite-solar-tint-llc-mobile-service-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Elite Solar Tint LLC. Mobile Service",
+    "brand": "Elite Solar Tint LLC. Mobile Service",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 930-1526",
+    "address": "14916002F, Phoenix, AZ 85051, USA",
+    "mapsUrl": "https://maps.google.com/?cid=9680113473424401194&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 120,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJy3Zl_3BtK4cRKiPvqOqrVoY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "cardetailing2go-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "CarDetailing2Go",
+    "brand": "CarDetailing2Go",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(972) 850-0404",
+    "address": "11156 Morrison Ln, Dallas, TX 75229, USA",
+    "mapsUrl": "https://maps.google.com/?cid=17074657384992868555&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 223,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJLxOWVWWdToYRywgAHm1e9ew"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ab-professional-car-detailing-and-ceramic-coating": {
+   "demo": false,
+   "data": {
+    "businessName": "AB Professional Car Detailing and Ceramic Coating Dallas",
+    "brand": "AB Professional Car Detailing and Ceramic Coating Dallas",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 922-6460",
+    "address": "5706 E Mockingbird Ln, Dallas, TX 75206, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13663581677058777041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 211,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJt34Evz6c8QER0d-ffCTLnr0"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "dfw-clear-bra-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "DFW Clear Bra",
+    "brand": "DFW Clear Bra",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 682-3497",
+    "address": "2415 E Hebron Pkwy, Carrollton, TX 75010, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1329090410961355127&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 235,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJv5bXhFgkTIYRd8G626_gcRI"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "bespoke-automotive-design-tint-ppf-ceramic-coating": {
+   "demo": false,
+   "data": {
+    "businessName": "Bespoke Automotive Design / tint/ ppf/ ceramic coatings/ wraps",
+    "brand": "Bespoke Automotive Design / tint/ ppf/ ceramic coatings/ wraps",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(817) 818-0525",
+    "address": "2405 W Arkansas Ln # A, Pantego, TX 76013, USA",
+    "mapsUrl": "https://maps.google.com/?cid=9867696177908105212&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 141,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJc01huo59ToYR_D-xe2QZ8Yg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "m-g-window-tinting-mobile-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "M&G window tinting mobile",
+    "brand": "M&G window tinting mobile",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 366-1575",
+    "address": "2170 NW 11th St, Miami, FL 33125, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4948906302296967301&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 137,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJiVhrKcW22YgRhUgavw8MrkQ"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "revived-rides-mobile-detailing-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Revived Rides Mobile Detailing",
+    "brand": "Revived Rides Mobile Detailing",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 472-8587",
+    "address": "675 Ponce De Leon Ave NE, Atlanta, GA 30306, USA",
+    "mapsUrl": "https://maps.google.com/?cid=7901727435956902758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 108,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJZUGBUgUF9YgRZlsr5DyTqG0"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "zenith-ppf-paint-protection-film-ceramic-coating-w": {
+   "demo": false,
+   "data": {
+    "businessName": "Zenith PPF - Paint Protection Film, Ceramic Coating, Window Tinting, and Vinyl Wraps",
+    "brand": "Zenith PPF - Paint Protection Film, Ceramic Coating, Window Tinting, and Vinyl Wraps",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(470) 888-7852",
+    "address": "2354 Pendley Rd A, Cumming, GA 30041, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1277419576840540721&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 144,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJF9OtU7Gb9YgRMdK1SlZOuhE"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "luxury-auto-boutique-the-lab-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Luxury Auto Boutique - The LAB",
+    "brand": "Luxury Auto Boutique - The LAB",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 723-8504",
+    "address": "4174 Old Austell Rd, Powder Springs, GA 30127, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6543856386038219195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 87,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ6V5ajpoj9YgRu8H6VrZy0Fo"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "grizzly-auto-studio-window-tint-wraps-ppf-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Grizzly Auto Studio Window Tint - Wraps - PPF",
+    "brand": "Grizzly Auto Studio Window Tint - Wraps - PPF",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(470) 590-9495",
+    "address": "1540 Roswell Rd Ste 700, Marietta, GA 30062, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1230296038875428187&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 161,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJlSqmrEbj9IgRW3W9nbrjEhE"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "district-7th-vinyl-wraps-ppf-window-tint-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "District 7th - Vinyl Wraps - PPF - Window Tint",
+    "brand": "District 7th - Vinyl Wraps - PPF - Window Tint",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 386-8154",
+    "address": "1050 N Eliseo Felix Jr Way #112, Avondale, AZ 85323, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1573456249668182131&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 123,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJQSVERr_QlE4RcyAXXx8K1hU"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "optical-auto-enhancements-llc-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Optical Auto Enhancements LLC",
+    "brand": "Optical Auto Enhancements",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 531-6909",
+    "address": "1516 Osprey Dr #207, DeSoto, TX 75115, USA",
+    "mapsUrl": "https://maps.google.com/?cid=16969349332284963864&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 90,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ3VKTgc6RToYRGHxbbE89f-s"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "briks-coatings-sandblasting-llc-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "BRIKS COATINGS & SANDBLASTING LLC",
+    "brand": "BRIKS COATINGS & SANDBLASTING",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 282-8858",
+    "address": "3730 E Superior Ave, Phoenix, AZ 85040, USA",
+    "mapsUrl": "https://maps.google.com/?cid=384159461514432174&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 74,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJAbYZVU0PK4cRrk6ssP7OVAU"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "top-notch-tint-az-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "TOP NOTCH TINT AZ",
+    "brand": "TOP NOTCH TINT AZ",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 886-2002",
+    "address": "1847 E 3rd St #120, Tempe, AZ 85281, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13314503049592469251&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 31,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ6cuvgiSnK4cRA3fQ9_qdxrg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "garage-customs-group-inc-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Garage Customs Group Inc",
+    "brand": "Garage Customs Group",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 795-0237",
+    "address": "3004 NW 79th Ave, Doral, FL 33122, USA",
+    "mapsUrl": "https://maps.google.com/?cid=11982091799237445607&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 226,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ9dq3k5632YgR50er7wHxSKY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "kyles-car-detailing-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Kyle’s Car Detailing",
+    "brand": "Kyle’s Car Detailing",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(910) 742-2609",
+    "address": "1273 Stillwood Dr NE, Atlanta, GA 30306, USA",
+    "mapsUrl": "https://maps.google.com/?cid=419092683011803137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 55,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJa6emp8EH9YgRAUjiIpPq0AU"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "camelback-mobile-car-detailing-of-ahwatukee-phoeni": {
+   "demo": false,
+   "data": {
+    "businessName": "Camelback Mobile Car Detailing of Ahwatukee",
+    "brand": "Camelback Mobile Car Detailing of Ahwatukee",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 858-0892",
+    "address": "4140 E Chandler Blvd, Phoenix, AZ 85048, USA",
+    "mapsUrl": "https://maps.google.com/?cid=776672804747077474&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 56,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJL66l_ssFK4cRYuenCc1Lxwo"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "d-d-tint-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "D&D Tint",
+    "brand": "D&D Tint",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(817) 469-8468",
+    "address": "1716 E Abram St, Arlington, TX 76010, USA",
+    "mapsUrl": "https://maps.google.com/?cid=8868002038107124258&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 321,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJH0xbqoWHToYRIrLQdN54EXs"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "prismatic-car-care-auto-detailing-window-tint-and": {
+   "demo": false,
+   "data": {
+    "businessName": "PRISMATIC CAR CARE , Auto Detailing, Window tint and PPF",
+    "brand": "PRISMATIC CAR CARE , Auto Detailing, Window tint and PPF",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(214) 926-5573",
+    "address": "4514 Cole Ave #600, Dallas, TX 75205, USA",
+    "mapsUrl": "https://maps.google.com/?cid=16005001129752744487&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 205,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJO5m1DzCvToYRJ1KjuLovHd4"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "performance-clear-bra-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Performance Clear Bra",
+    "brand": "Performance Clear Bra",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(972) 295-7068",
+    "address": "2800 Shamrock Ave Ste 116, Fort Worth, TX 76107, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10114528702500807794&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 250,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJmRAG8kxzToYRcqQND0QGXow"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "alset-auto-atlanta-ceramic-ppf-tint-wrap-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "ALSET Auto Atlanta | Ceramic, PPF, Tint & Wrap",
+    "brand": "ALSET Auto Atlanta | Ceramic, PPF, Tint & Wrap",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 737-2272",
+    "address": "300 Technology Ct SE Ste 500, Smyrna, GA 30082, USA",
+    "mapsUrl": "https://maps.google.com/?cid=7693382793168524484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 325,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJC91q0LWn9YgRxJTpm-NixGo"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "phoenix-ceramic-coatings-ppf-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Phoenix Ceramic Coatings & PPF",
+    "brand": "Phoenix Ceramic Coatings & PPF",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(623) 246-4871",
+    "address": "2404 W 12th St Ste 2, Tempe, AZ 85281, USA",
+    "mapsUrl": "https://maps.google.com/?cid=484020988457121342&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 42,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJNx3M6cMPK4cRPvbRSIaWtwY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "airpark-auto-detailing-phoenix-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Airpark Auto Detailing Phoenix",
+    "brand": "Airpark Auto Detailing Phoenix",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 998-5899",
+    "address": "338 E Camelback Rd, Phoenix, AZ 85012, USA",
+    "mapsUrl": "https://maps.google.com/?cid=5279285383225244288&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 253,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ7bb_jgMTK4cRgHoNzxXKQ0k"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "tempe-auto-spa-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Tempe Auto Spa",
+    "brand": "Tempe Auto Spa",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 576-5484",
+    "address": "1901 E 5th St, Tempe, AZ 85288, USA",
+    "mapsUrl": "https://maps.google.com/?cid=16117808295779433987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 167,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJXYypKFYIK4cRA_7Gyz_1rd8"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "tempe-tint-lab-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Tempe Tint Lab",
+    "brand": "Tempe Tint Lab",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 908-1722",
+    "address": "1505 E Weber Dr #119, Tempe, AZ 85288, USA",
+    "mapsUrl": "https://maps.google.com/?cid=16359509469999855682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 183,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJb4v5kWMJK4cRQvj6wi-nCOM"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "auto-cosmetics-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Auto Cosmetics",
+    "brand": "Auto Cosmetics",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 331-7905",
+    "address": "500 N 56th St #1, Chandler, AZ 85226, USA",
+    "mapsUrl": "https://maps.google.com/?cid=15828178973495377505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 217,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJW_ZZOuCrK4cRYb5_ROr8qNs"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "fast-lane-window-tinting-and-protection-films-phoe": {
+   "demo": false,
+   "data": {
+    "businessName": "Fast Lane Window Tinting and Protection Films",
+    "brand": "Fast Lane Window Tinting and Protection Films",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 621-9695",
+    "address": "2727 N Scottsdale Rd b, Scottsdale, AZ 85257, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6370575528057295559&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 357,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJDwyXw_N0K4cRx9KmpLDUaFg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "premier-tint-wrap-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Premier Tint & Wrap",
+    "brand": "Premier Tint & Wrap",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 741-5049",
+    "address": "7962 W Gold Dust Ave Unit 4, Peoria, AZ 85345, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4924668124484733083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 205,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJoapROJANK4cRmwiaNJHvV0Q"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "az-glass-tinting-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "AZ Glass Tinting",
+    "brand": "AZ Glass Tinting",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(623) 780-4950",
+    "address": "2432 W Peoria Ave #1145, Phoenix, AZ 85029, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1992607321714509922&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 220,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJA-fTcppvK4cRYsiiQ80ppxs"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "lazarus-pro-detail-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Lazarus Pro Detail",
+    "brand": "Lazarus Pro Detail",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 855-5944",
+    "address": "539 W Commerce St, Dallas, TX 75208, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13426242415863056233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 72,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJOzXjL-qZToYRacfMiVeYU7o"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ceramic-pro-arlington-ceramic-coating-ppf-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Ceramic Pro Arlington - Ceramic Coating & PPF",
+    "brand": "Ceramic Pro Arlington - Ceramic Coating & PPF",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(817) 663-4339",
+    "address": "2202 E Road to Six Flags St, Arlington, TX 76011, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13795993935273379223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 55,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJwbepUmSHToYRl8Vpy2M3db8"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "platinum-appeal-wraps-tint-pff-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Platinum Appeal - Wraps, Tint & PFF",
+    "brand": "Platinum Appeal - Wraps, Tint & PFF",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(214) 732-4687",
+    "address": "2406 S Jupiter Rd Ste 4, Garland, TX 75041, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10660747881347705633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 35,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJRf6sGP2hToYRIWu6C7eV8pM"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "speed-shield-dallasfort-worth-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Speed Shield - Dallas–Fort Worth",
+    "brand": "Speed Shield - Dallas–Fort Worth",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 522-7777",
+    "address": "15177 Business Ave, Addison, TX 75001, USA",
+    "mapsUrl": "https://maps.google.com/?cid=7797387489972464744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 216,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ7adlLMEmTIYRaCziG5ziNWw"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "rodeo-werkz-auto-restyling-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Rodeo Werkz Auto Restyling",
+    "brand": "Rodeo Werkz Auto Restyling",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(945) 251-8681",
+    "address": "17817 Davenport Rd #225, Dallas, TX 75252, USA",
+    "mapsUrl": "https://maps.google.com/?cid=8278324718477048024&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 215,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJkx3JY8IjTIYR2PgolHiE4nI"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "forrenn-wraps-and-tint-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Forrenn Wraps and Tint",
+    "brand": "Forrenn Wraps and Tint",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(214) 713-1977",
+    "address": "14290 Gillis Rd, Farmers Branch, TX 75244, USA",
+    "mapsUrl": "https://maps.google.com/?cid=17756317315715768962&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 227,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJGaacLtAnTIYRgiJbioUca_Y"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "xtreme-pro-detailers-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Xtreme Pro Detailers",
+    "brand": "Xtreme Pro Detailers",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 768-9740",
+    "address": "2031 NW 33rd St, Miami, FL 33142, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10704202229279979680&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 166,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJbWl_2VGw2YgRoHgt2Db3jJQ"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "diamond-detailing-ceramic-coating-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "DIAMOND DETAILING & CERAMIC COATING",
+    "brand": "DIAMOND DETAILING & CERAMIC COATING",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(305) 427-8499",
+    "address": "11005 SW 88th St Apt C201, Miami, FL 33176, USA",
+    "mapsUrl": "https://maps.google.com/?cid=5285719788284444585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 37,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJpdotnv7B2YgRqX_yeiSmWkk"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "diamond-finished-auto-spa-coating-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Diamond Finished Auto Spa & Coating",
+    "brand": "Diamond Finished Auto Spa & Coating",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(305) 922-4939",
+    "address": "8155 NW 74th Ave, Medley, FL 33166, USA",
+    "mapsUrl": "https://maps.google.com/?cid=2915970312946865318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 66,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJH6Oyz-S72YgRplTI1oybdyg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "detail-boutique-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Detail Boutique",
+    "brand": "Detail Boutique",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(305) 395-7717",
+    "address": "2841 SW 69th Ct, Miami, FL 33155, USA",
+    "mapsUrl": "https://maps.google.com/?cid=292105472559641836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 114,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ6W3IOMu52YgR7HTdMGHEDQQ"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "highest-details-mobile-detailing-car-ceramic-coati": {
+   "demo": false,
+   "data": {
+    "businessName": "Highest Details Mobile Detailing car, ceramic coating, Wraps and PPF",
+    "brand": "Highest Details Mobile Detailing car, ceramic coating, Wraps and PPF",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 303-5059",
+    "address": "22962 SW 115th Ave, Miami, FL 33170, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6004557147661928399&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 210,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ9aggph_K1ocRzwfsi-l4VFM"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ab-wraps-miami-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "AB Wraps miami",
+    "brand": "AB Wraps miami",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 447-3783",
+    "address": "7362 NW 34th St, Miami, FL 33122, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4461615879765837240&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 268,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJg36bZuW72YgRuEWvBQHY6j0"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "trushyne-mobile-detailing-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "TRUSHYNE MOBILE DETAILING",
+    "brand": "TRUSHYNE MOBILE DETAILING",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 438-9718",
+    "address": "1087 State St NW, Atlanta, GA 30318, USA",
+    "mapsUrl": "https://maps.google.com/?cid=9150399483379740176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 315,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJieWDm5wB9YgREG7EZ9m__H4"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "every-detail-mobile-car-detailing-in-decatur-ga-at": {
+   "demo": false,
+   "data": {
+    "businessName": "Every Detail - Mobile Car Detailing in Decatur GA",
+    "brand": "Every Detail - Mobile Car Detailing in Decatur GA",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 855-0672",
+    "address": "223 Coventry Rd, Decatur, GA 30030, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4127711751951309230&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 172,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJVeXM4B_yMI4RrllDBviTSDk"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "le-tigre-luxe-ppf-ceramic-coating-window-tint-atla": {
+   "demo": false,
+   "data": {
+    "businessName": "Le Tigre' Luxe - PPF, Ceramic Coating, Window Tint",
+    "brand": "Le Tigre' Luxe - PPF, Ceramic Coating, Window Tint",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 409-4310",
+    "address": "764 Edgewood Ave NE, Atlanta, GA 30307, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6233700643585549484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 206,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJOcZIfnQD9YgRrGQKMbWNglY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "hinton-auto-detailing-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Hinton Auto Detailing",
+    "brand": "Hinton Auto Detailing",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(470) 237-7867",
+    "address": "1375 Dresden Dr NE, Brookhaven, GA 30319, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10075616746268069970&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 254,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJf5cxmVcX9YgRUhBJPgzI04s"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "protective-film-solution-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Protective Film Solution",
+    "brand": "Protective Film Solution",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(678) 467-5967",
+    "address": "5715 Stables Wy Unit 105, Alpharetta, GA 30004, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1550452316499547658&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 79,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJpzwMI4OF9YgRChYjzipQhBU"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "dr-tintz-ppf-wrap-detail-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Dr Tintz - PPF - Wrap - Detail",
+    "brand": "Dr Tintz - PPF - Wrap - Detail",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(678) 381-9547",
+    "address": "1905 Airport Industrial Park Dr SE a, Marietta, GA 30060, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13729822056853875238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 70,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJv7sVOAAR9YgRJioZwGogir4"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "rev-atlanta-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "REV ATLANTA",
+    "brand": "REV ATLANTA",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 666-5508",
+    "address": "4420 Roswell Rd Suite D, Atlanta, GA 30342, USA",
+    "mapsUrl": "https://maps.google.com/?cid=5512959956708302788&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 38,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJu2HhU1kP9YgRxB-NKN_3gUw"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "elegance-auto-cosmetics-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Elegance Auto Cosmetics",
+    "brand": "Elegance Auto Cosmetics",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 957-7176",
+    "address": "1155 Perimeter Center W, Atlanta, GA 30338, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6316515556768178694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 40,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ3d2DDSNVi4gRBmJlu27FqFc"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "the-tint-spot-clear-bra-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "The Tint Spot & Clear Bra",
+    "brand": "The Tint Spot & Clear Bra",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(623) 223-9733",
+    "address": "9950 W Van Buren St #105, Avondale, AZ 85323, USA",
+    "mapsUrl": "https://maps.google.com/?cid=5331501663014885208&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.7,
+    "reviewCount": 263,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJWyqWZuw-K4cRWBdo14NM_Uk"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "proline-window-tint-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "ProLine Window Tint",
+    "brand": "ProLine Window Tint",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 273-9225",
+    "address": "2436 E Winchester Pl, Chandler, AZ 85286, USA",
+    "mapsUrl": "https://maps.google.com/?cid=17792055740342143106&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 170,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJY4fr56sIK4cRgggL820U6vY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "film-vinyl-designs-llc-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Film & Vinyl Designs LLC",
+    "brand": "Film & Vinyl Designs",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(817) 354-9200",
+    "address": "7532 Pebble Dr, Fort Worth, TX 76118, USA",
+    "mapsUrl": "https://maps.google.com/?cid=17480476828864587032&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 45,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJpfP31nZ5ToYRGKXrcA8hl_I"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "detail-motors-miami-ceramic-coating-mobile-car-det": {
+   "demo": false,
+   "data": {
+    "businessName": "Detail Motors ( Miami Ceramic Coating & Mobile Car Detailing Miami)",
+    "brand": "Detail Motors ( Miami Ceramic Coating & Mobile Car Detailing Miami)",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 340-1600",
+    "address": "4305 NW 183rd St, Miami Gardens, FL 33055, USA",
+    "mapsUrl": "https://maps.google.com/?cid=15198921547611011376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 108,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ05NiPMqv2YgRMHlixp5q7dI"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "made-2-shade-window-tint-ppf-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Made 2 Shade Window Tint & PPF",
+    "brand": "Made 2 Shade Window Tint & PPF",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(623) 252-2250",
+    "address": "15732 W Montecito Ave, Goodyear, AZ 85395, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4852422348546120353&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 145,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJO7G1uN8PK4cRoRpCsWpEV0M"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "tinted-az-tempe-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Tinted Az - Tempe",
+    "brand": "Tinted Az - Tempe",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 905-2963",
+    "address": "1761 W University Dr Ste 139, Tempe, AZ 85281, USA",
+    "mapsUrl": "https://maps.google.com/?cid=13926449099778179104&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 139,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJt_Z_6ycPK4cRIEDWtquvRME"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "rising-sun-window-tinting-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Rising Sun Window Tinting",
+    "brand": "Rising Sun Window Tinting",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 647-2111",
+    "address": "2932 N 16th St Ste A, Phoenix, AZ 85016, USA",
+    "mapsUrl": "https://maps.google.com/?cid=5199740152205598978&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 121,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJNUoj3nUXK4cRAuGMeB4wKUg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "dallasfinestdetailing-and-hail-repair-llc-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "DallasFinestDetailing And Hail Repair LLC",
+    "brand": "DallasFinestDetailing And Hail Repair",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(469) 332-5623",
+    "address": "11363 Denton Dr Ste 126, Dallas, TX 75229, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4430986596658801937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 100,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJdVE5owsnTIYREW1dUtUGfj0"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "pro-tect-mobile-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Pro-Tect Mobile",
+    "brand": "Pro-Tect Mobile",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(903) 241-4132",
+    "address": "4951 Airport Pkwy Ste 710, Addison, TX 75001, USA",
+    "mapsUrl": "https://maps.google.com/?cid=5043714657035618272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.6,
+    "reviewCount": 93,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJrxnFPh0vTIYR4AcKAcLf_kU"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "detailing-tech-garage-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Detailing Tech Garage",
+    "brand": "Detailing Tech Garage",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 783-1855",
+    "address": "4264 SW 74th Ave, Miami, FL 33155, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4485940261744647528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 211,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJm6R7zMpJ_q4RaJ3piOZCQT4"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "yosnel-exotic-window-tinting-ppf-car-wraps-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Yosnel Exotic Window Tinting, PPF, Car Wraps",
+    "brand": "Yosnel Exotic Window Tinting, PPF, Car Wraps",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(305) 542-6301",
+    "address": "8276 NW South River Dr, Medley, FL 33166, USA",
+    "mapsUrl": "https://maps.google.com/?cid=5675895376813478872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 118,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJVd9KvWK32YgR2NM_5cXUxE4"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "car-detailing-atlanta-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Car Detailing Atlanta",
+    "brand": "Car Detailing Atlanta",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(678) 888-2201",
+    "address": "2384 Rhineland Ct NE, Atlanta, GA 30345, USA",
+    "mapsUrl": "https://maps.google.com/?cid=14221189814544588289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 128,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJi0gurZ4J9YgRAV5VC8rQW8U"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "metro-protection-ppf-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Metro Protection PPF",
+    "brand": "Metro Protection PPF",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(404) 985-2849",
+    "address": "4255 Trotters Way, Alpharetta, GA 30004, USA",
+    "mapsUrl": "https://maps.google.com/?cid=11397555459745208637&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 88,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJoQIi6WrJVwkRPVntxU1ALJ4"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "meticulous-mobile-detailing-llc-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Meticulous Mobile Detailing, LLC.",
+    "brand": "Meticulous Mobile Detailing",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 208-2163",
+    "address": "5510 W Hayduk Rd, Laveen, AZ 85339, USA",
+    "mapsUrl": "https://maps.google.com/?cid=17754229719643231773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 248,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ30ZKlaIXK4cRHZYENN2xY_Y"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "abdullah-detail-spa-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "Abdullah Detail Spa",
+    "brand": "Abdullah Detail Spa",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(943) 206-5571",
+    "address": "2315 Glenwood Ave SE, Atlanta, GA 30316, USA",
+    "mapsUrl": "https://maps.google.com/?cid=1127823427963253535&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 321,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ5925htsB9YgRH_McqW7Vpg8"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "4bros-auto-detailing-ceramic-coating-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "4Bros Auto Detailing & Ceramic Coating",
+    "brand": "4Bros Auto Detailing & Ceramic Coating",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 935-4279",
+    "address": "145 E Chilton Dr, Chandler, AZ 85225, USA",
+    "mapsUrl": "https://maps.google.com/?cid=16610471668754555648&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 329,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJI4C_gthcQg4RACPOB_o_hOY"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ppfwerks-ppf-specialist-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "PPFWERKS | PPF Specialist",
+    "brand": "PPFWERKS | PPF Specialist",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(602) 663-2967",
+    "address": "2010 W Parkside Ln #108, Phoenix, AZ 85027, USA",
+    "mapsUrl": "https://maps.google.com/?cid=9848464378266458467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 158,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJjYhi7UhlK4cRYxmpMSzGrIg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "ozbraz-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "OzBraz",
+    "brand": "OzBraz",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 863-9407",
+    "address": "2375 S Arizona Ave Suite 4, Chandler, AZ 85286, USA",
+    "mapsUrl": "https://maps.google.com/?cid=9425685003523129720&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 245,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJMbmEFnGrK4cReAG5P5LCzoI"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "superior-image-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "Superior Image",
+    "brand": "Superior Image",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 508-7055",
+    "address": "945 S Hohokam Dr #5115, Tempe, AZ 85281, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6069233980721057843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.7,
+    "reviewCount": 166,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJK5P1uCAPK4cRM9CbNyZAOlQ"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "arch-tint-360-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "ARCH TINT 360",
+    "brand": "ARCH TINT 360",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 448-0668",
+    "address": "625 W Deer Valley Rd #110, Phoenix, AZ 85027, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10268332766827944602&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 279,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJ833f1nlzK4cRmppIWj9ygI4"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "luxe-tint-phoenix": {
+   "demo": false,
+   "data": {
+    "businessName": "LUXE TiNT",
+    "brand": "LUXE TiNT",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "(480) 833-6583",
+    "address": "418 N Hunt Dr, Mesa, AZ 85203, USA",
+    "mapsUrl": "https://maps.google.com/?cid=12953223107342020681&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 210,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJz2SFakmnK4cRSbCAeckXw7M"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "auto-detailing-aura-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Auto detailing aura",
+    "brand": "Auto detailing aura",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(945) 233-7397",
+    "address": "15500 Cloverhill Rd, Dallas, TX 75253, USA",
+    "mapsUrl": "https://maps.google.com/?cid=17609655779898041295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 235,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJnf97LDvqTkcRzyO6waEQYvQ"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "martin-auto-detailing-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Martin Auto Detailing",
+    "brand": "Martin Auto Detailing",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(972) 895-9432",
+    "address": "6115 Owens St Unit 306, Dallas, TX 75235, USA",
+    "mapsUrl": "https://maps.google.com/?cid=17438672360897439114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 162,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJs0a-gHCfToYRiuW2QR6cAvI"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "south-beach-auto-spa-mobile-car-detailing-car-wash": {
+   "demo": false,
+   "data": {
+    "businessName": "South Beach Auto Spa Mobile Car Detailing & Car Wash",
+    "brand": "South Beach Auto Spa Mobile Car Detailing & Car Wash",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(772) 268-4342",
+    "address": "923 W 41st St, Miami Beach, FL 33140, USA",
+    "mapsUrl": "https://maps.google.com/?cid=318766652166963424&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 153,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJe8pXn-ndPKgR4ACnzJR8bAQ"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "detailing-mode-mobile-detailing-ceramic-coating-mi": {
+   "demo": false,
+   "data": {
+    "businessName": "Detailing Mode Mobile Detailing & Ceramic Coating",
+    "brand": "Detailing Mode Mobile Detailing & Ceramic Coating",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 848-5836",
+    "address": "696 W 17th St, Hialeah, FL 33010, USA",
+    "mapsUrl": "https://maps.google.com/?cid=16751489443522079786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 395,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJf-JZWZNxFCARKuzWS-U-eeg"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "cayo-detailing-ceramic-coating-mobile-detailing-br": {
+   "demo": false,
+   "data": {
+    "businessName": "Cayo Detailing | Ceramic Coating & Mobile Detailing Broward",
+    "brand": "Cayo Detailing | Ceramic Coating & Mobile Detailing Broward",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(754) 268-0530",
+    "address": "1230 NW 133rd Ave, Sunrise, FL 33323, USA",
+    "mapsUrl": "https://maps.google.com/?cid=2589079804302366275&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 179,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJW1RRvewPMWgRQ5aUTl1C7iM"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "elite-premium-detailing-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "Elite Premium Detailing",
+    "brand": "Elite Premium Detailing",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(786) 876-7891",
+    "address": "5150 SW 48th Way Unit 614, Davie, FL 33314, USA",
+    "mapsUrl": "https://maps.google.com/?cid=2133322467307629654&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 214,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJV34LmZEg4a0RViw7L3sVmx0"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "clearfilm-atlanta": {
+   "demo": false,
+   "data": {
+    "businessName": "ClearFilm",
+    "brand": "ClearFilm",
+    "city": "Atlanta",
+    "state": "GA",
+    "phone": "(678) 332-9306",
+    "address": "788 Old Roswell Rd, Roswell, GA 30076, USA",
+    "mapsUrl": "https://maps.google.com/?cid=6968504578961716908&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 177,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJTz4FpLl09YgRrDaybP4ZtWA"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "dallas-super-sound-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Dallas Super Sound",
+    "brand": "Dallas Super Sound",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(214) 372-4700",
+    "address": "4515 Village Fair Dr a24, Dallas, TX 75224, USA",
+    "mapsUrl": "https://maps.google.com/?cid=7745226589674207216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.9,
+    "reviewCount": 247,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJnZAtyuqXToYR8PdwHoySfGs"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "texas-custom-stereo-window-tint-dallas": {
+   "demo": false,
+   "data": {
+    "businessName": "Texas Custom Stereo Window Tint",
+    "brand": "Texas Custom Stereo Window Tint",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "(972) 298-4400",
+    "address": "4312 W Camp Wisdom Rd, Dallas, TX 75237, USA",
+    "mapsUrl": "https://maps.google.com/?cid=10757541650610070756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 4.8,
+    "reviewCount": 171,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJB5zIfgWRToYR5CQVpSJ3SpU"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
+  },
+  "dd-auto-detailing-miami": {
+   "demo": false,
+   "data": {
+    "businessName": "DD Auto Detailing",
+    "brand": "DD Auto Detailing",
+    "city": "Miami",
+    "state": "FL",
+    "phone": "(305) 301-7679",
+    "address": "11520 SW 178th Terrace, Miami, FL 33157, USA",
+    "mapsUrl": "https://maps.google.com/?cid=4173331326807389237&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "rating": 5.0,
+    "reviewCount": 215,
+    "hours": null,
+    "servicesShort": "Ceramic coating, paint protection film and window tint",
+    "services": [
+     "exterior",
+     "interior",
+     "correction",
+     "ceramic",
+     "film",
+     "tint"
+    ],
+    "accent": null,
+    "placeId": "ChIJMe-fhETD2YgRNTRdALum6jk"
+   },
+   "files": [
+    "index.html",
+    "work/index.html",
+    "book/index.html",
+    "exterior-detail/index.html",
+    "interior-detail/index.html",
+    "paint-correction/index.html",
+    "ceramic-coating/index.html",
+    "protection-film/index.html",
+    "window-tint/index.html",
+    "og.png"
+   ],
+   "made": "2026-10-22",
+   "updated": "2026-10-22"
   }
  }
 }
