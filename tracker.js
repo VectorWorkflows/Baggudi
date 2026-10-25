@@ -18,7 +18,8 @@
 
   var slug = decodeURIComponent(l.pathname.split('/')[1] || '') || 'home', K = 'vw:' + slug + ':';
   // a beacon still goes out while the tab is closing, and plain text needs no CORS preflight
-  function send(text) { n.sendBeacon && n.sendBeacon(RELAY, text); }
+  // the Worker keeps visits from Sam's city quiet unless the page has ?force_alert=1 (the beacon's Referer carries no query)
+  function send(text) { n.sendBeacon && n.sendBeacon(RELAY + (/[?&]force_alert=1/.test(l.search) ? '?force_alert=1' : ''), text); }
 
   if (me && me.getAttribute('data-expired') == '1') {
     if (!get(ss, K + 'expired')) {
