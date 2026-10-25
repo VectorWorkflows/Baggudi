@@ -179,6 +179,9 @@ def page(ctx, *, title, description, body, jsonld=None, noindex=False):
         "<script>document.documentElement.classList.add('js')</script>",
         f'<script src="{e(ctx.asset("js/site.js"))}" defer></script>',
     ]
+    # under a subfolder it is a preview on baggudi.com, whose tracker.js tells Sam when it is opened
+    if ctx.base != "/":
+        head.append('<script src="/tracker.js" defer></script>')
     if jsonld:
         payload = json.dumps(jsonld, ensure_ascii=False).replace("</", "<\\/")
         head.append(f'<script type="application/ld+json">{payload}</script>')

@@ -11,3 +11,6 @@ desktop.ini
 
 # Separate repo (the detailing kit source); it is not part of this site.
 /Sick Site/
+
+# expire_demos.py keeps an expired demo's page here to restore it. Committed, GitHub Pages would serve it.
+/.archive/
