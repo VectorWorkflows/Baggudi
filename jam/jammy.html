@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hammer Jam Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+/* One narrow column of panels, built for a phone held between raids */
+:root{
+  --bg:#eef1f6; --panel:#ffffff; --ink:#18202e; --muted:#5d6779; --line:#d5dbe5;
+  --gold:#b7790a; --gold-soft:#fbefd4; --boost:#0f7f86; --boost-soft:#d6f1f2;
+  --good:#1f7a3d; --good-soft:#dcf1e2; --warn:#a4560b; --warn-soft:#fde7cf; --bad:#b3261e; --bad-soft:#fadcd9;
+  --input:#f6f8fb; color-scheme:light;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Nunito Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0f141d; --panel:#171e2a; --ink:#e8ecf3; --muted:#9aa5b8; --line:#2a3445;
+  --gold:#f0b43c; --gold-soft:#3a2d12; --boost:#4fd0d6; --boost-soft:#123537;
+  --good:#5fd38a; --good-soft:#163222; --warn:#f3a55a; --warn-soft:#3b2814; --bad:#ff8a80; --bad-soft:#3d1c1a;
+  --input:#111823; color-scheme:dark}}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+.wrap{max-width:640px;margin:0 auto;padding-block:18px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:14px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.02em;margin:0;text-wrap:balance}
+h1{font-size:30px;line-height:1.05}
+h2{font-size:20px;text-transform:uppercase;letter-spacing:.06em}
+h3{font-size:16px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.sub{color:var(--muted);font-size:13px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.endbox{text-align:right}
+.endbox .num{font-family:var(--display);font-size:24px;font-weight:600;font-variant-numeric:tabular-nums}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:10px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.spread{justify-content:space-between}
+button{font:inherit;font-weight:700;border-radius:8px;border:1px solid var(--line);background:var(--input);color:var(--ink);padding:8px 12px;cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--boost);outline-offset:2px}
+button.primary{background:var(--gold);border-color:var(--gold);color:#1a1205}
+button.boost{background:var(--boost);border-color:var(--boost);color:#04191a}
+button.small{padding:5px 9px;font-size:13px}
+button.chip{padding:5px 10px;font-size:13px;font-weight:600}
+button.chip[aria-pressed="true"]{background:var(--boost-soft);border-color:var(--boost)}
+input,textarea{font:inherit;color:var(--ink);background:var(--input);border:1px solid var(--line);border-radius:7px;padding:6px 8px;min-width:0}
+input[type=number]{width:70px;text-align:center}
+textarea{width:100%;min-height:70px;font-size:12px}
+.big{font-family:var(--display);font-size:25px;font-weight:700;line-height:1.12}
+.card{border-radius:9px;padding:12px;display:grid;gap:6px}
+.go{background:var(--good-soft);border:1px solid var(--good)}
+.stay{background:var(--warn-soft);border:1px solid var(--warn)}
+.idle{background:var(--input);border:1px solid var(--line)}
+.bad{background:var(--bad-soft);border:1px solid var(--bad)}
+.boostclock{font-family:var(--display);font-size:30px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--boost)}
+.pill{font-size:11px;font-weight:700;border-radius:999px;padding:2px 8px;text-transform:uppercase;letter-spacing:.05em}
+.pill.hero{background:var(--gold-soft);color:var(--gold)}
+.pill.bld{background:var(--input);color:var(--muted);border:1px solid var(--line)}
+.list{display:grid;gap:8px}
+.b{border:1px solid var(--line);border-radius:9px;padding:10px;display:grid;gap:6px}
+.b.isdone{border-color:var(--bad);background:var(--bad-soft)}
+.b .name{font-weight:700}
+.b .clock{font-family:var(--display);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.when{color:var(--muted);font-size:13px}
+.edit{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.edit label{font-size:12px;color:var(--muted)}
+.hide{display:none!important}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+td.num{font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+.kv{display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-variant-numeric:tabular-nums}
+.kv b{font-family:var(--display);font-size:19px;text-align:right}
+.note{font-size:12.5px;color:var(--muted)}
+.ev{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
+.ev:last-child{border-bottom:0}
+.ev .t{font-family:var(--display);font-size:18px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ev .asleep{color:var(--warn);font-size:12px;font-weight:700}
+.bar{height:8px;border-radius:99px;background:var(--input);border:1px solid var(--line);overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--gold)}
+details summary{cursor:pointer;font-weight:700}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Hammer Jam Tracker</h1>
+      <div class="sub">Type timers as the game shows them. Potion speed-ups are counted for you.</div>
+    </div>
+    <div class="endbox"><div class="sub">Jam ends in</div><div class="num" id="jamLeft">–</div></div>
+  </div>
+
+  <!-- NEXT -->
+  <section class="panel" aria-labelledby="h-next">
+    <h2 id="h-next">What's next</h2>
+    <div class="card idle" id="nextCard"><div class="big" id="nextBig">Add your builders below.</div><div class="sub" id="nextSmall"></div></div>
+    <div id="events"></div>
+  </section>
+
+  <!-- LEAVE -->
+  <section class="panel" aria-labelledby="h-leave">
+    <h2 id="h-leave">Before you close the game</h2>
+    <div class="row">
+      <span class="sub">Back at</span>
+      <button class="chip" data-ret="ideal">Best time</button>
+      <button class="chip" data-ret="4">+4 h</button>
+      <button class="chip" data-ret="7">+7 h</button>
+      <button class="chip" data-ret="10">+10 h</button>
+      <input type="time" id="retTime" aria-label="Custom return time">
+    </div>
+    <div class="card idle" id="leaveCard" aria-live="polite">
+      <div class="big" id="leaveBig">–</div>
+      <div class="sub" id="leaveSmall"></div>
+      <div class="row" id="leaveBtns"></div>
+    </div>
+  </section>
+
+  <!-- POTIONS -->
+  <section class="panel" aria-labelledby="h-pot">
+    <div class="row spread"><h2 id="h-pot">Builder potions</h2><span class="sub" id="potCount"></span></div>
+    <div class="row"><div class="boostclock" id="boostClock">Off</div><div class="sub" id="boostText"></div></div>
+    <div class="row">
+      <button class="boost" id="fire1">Fire 1 potion</button>
+      <span class="sub">Potion time left in game:</span>
+      <input type="number" id="boostMin" min="0" max="900" placeholder="min" aria-label="Potion minutes left">
+      <button class="small" id="boostSet">Set</button>
+    </div>
+    <div class="row">
+      <label class="sub">Total for the Jam <input type="number" id="potTotal" min="0" max="300"></label>
+      <label class="sub">Used so far <input type="number" id="potUsed" min="0" max="300"></label>
+    </div>
+    <div class="bar" aria-hidden="true"><i id="potBar" style="width:0"></i></div>
+    <div class="card idle" id="potCard"><div id="potAdvice"></div></div>
+  </section>
+
+  <!-- BUILDERS -->
+  <section class="panel" aria-labelledby="h-b">
+    <div class="row spread"><h2 id="h-b">Builders</h2><button class="small" id="addB">Add builder</button></div>
+    <div class="list" id="blist"></div>
+    <div class="note">When you restart something, tap its button and type the new timer exactly as the game shows it. Hero timers drive the advice; buildings tell you when a builder frees up for walls.</div>
+  </section>
+
+  <!-- WALLS -->
+  <section class="panel" aria-labelledby="h-w">
+    <h2 id="h-w">Walls</h2>
+    <div class="card idle" id="wallCard"><div class="big" id="wallBig">–</div><div class="sub" id="wallSmall"></div></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Level now</th><th>Walls</th><th>Next level costs</th><th>Just upgraded</th></tr></thead>
+      <tbody id="wallRows"></tbody>
+    </table></div>
+    <div class="row">
+      <label class="sub">Wall rings left <input type="number" id="rings" min="0" max="500"></label>
+      <label class="sub">Finish by <input type="datetime-local" id="wallBy"></label>
+    </div>
+    <h3>Loot right now (optional)</h3>
+    <div class="row">
+      <label class="sub">Gold (M) <input type="number" id="gold" min="0" step="0.1"></label>
+      <label class="sub">Elixir (M) <input type="number" id="elix" min="0" step="0.1"></label>
+      <label class="sub">Keep elixir for Warden (M) <input type="number" id="keepE" min="0" step="0.1"></label>
+    </div>
+    <div class="kv" id="wallKv"></div>
+    <div class="note">Tap a "Just upgraded" button after you upgrade walls, so the plan keeps up. Typing the counts works too. Rings are worth the same on every level (0.4M each at 40%), so use them anywhere.</div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section class="panel" aria-labelledby="h-s">
+    <h2 id="h-s">Settings</h2>
+    <div class="row">
+      <label class="sub">Jam started <input type="datetime-local" id="jamStart"></label>
+      <label class="sub">Jam ends <input type="datetime-local" id="jamEnd"></label>
+    </div>
+    <div class="row">
+      <label class="sub">You pay <input type="number" id="pay" min="1" max="100"> % of normal prices</label>
+      <label class="sub">Asleep from <input type="time" id="sleepFrom"></label>
+      <label class="sub">to <input type="time" id="sleepTo"></label>
+    </div>
+    <details>
+      <summary>Backup or move to another device</summary>
+      <div class="list" style="margin-top:8px">
+        <div class="note">Everything is saved in this browser only. To move it, copy this text and paste it into the box on the other device.</div>
+        <textarea id="backup" aria-label="Backup text"></textarea>
+        <div class="row"><button class="small" id="copyB">Copy backup</button><button class="small" id="loadB">Load pasted backup</button><span class="sub" id="bMsg"></span></div>
+      </div>
+    </details>
+    <div class="row spread"><span class="note" id="saveState"></span><button class="small" id="resetAll">Clear timers</button></div>
+    <div class="row hide" id="confirmReset"><span class="sub">Clear every timer and potion boost?</span><button class="small" id="resetYes">Yes, clear</button><button class="small" id="resetNo">Keep</button></div>
+  </section>
+</div>
+
+<script>
+(function(){
+"use strict";
+const H=3600e3, MIN=60e3, DAY=24*H;
+const KEY='hammerJamTracker.v2';
+// Wall prices before the Jam discount, per upgrade INTO that level (gold or elixir), and ring cost
+const WALL={16:{m:4,r:4},17:{m:5,r:5},18:{m:7,r:7},19:{m:10,r:10}};
+const MAXW=19, LEVELS=[15,16,17,18,19];
+
+function iso(s){return Date.parse(s);}
+function seed(){
+  const t0=iso('2026-11-01T11:00:00Z'); // your 16:30 IST screenshot
+  const b=(name,hero,h)=>({id:Math.random().toString(36).slice(2,9),name,hero,r0:h,t0});
+  return {v:2,
+    jamStart:iso('2026-11-01T07:00:00Z'), jamEnd:iso('2026-11-16T07:00:00Z'), pay:40,
+    builders:[b('Grand Warden',true,12+49/60),b('Minion Prince',true,22+49/60),b('Archer Queen',true,22+50/60),
+      b('Barbarian King',true,22+50/60),b('Dragon Duke',true,52),b('Bomb Tower',false,8+31/60),b('Bomb Tower (last level)',false,62)],
+    boosts:[{s:t0,e:t0+29*MIN}], potTotal:92, potUsed:2,
+    ret:{mode:'ideal'}, sleep:{from:'00:30',to:'09:00'},
+    walls:{counts:{15:236,16:56,17:33,18:0,19:0}, rings:25, by:iso('2026-11-14T07:00:00Z'), log:[]},
+    loot:{gold:null,elix:null,keepE:4}};
+}
+let S;
+try{S=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){S=null;}
+if(!S||S.v!==2)S=seed();
+const $=id=>document.getElementById(id);
+const uid=()=>Math.random().toString(36).slice(2,9);
+const disc=()=>(S.pay??40)/100; // you pay 40% of the normal price
+const price=l=>WALL[l].m*disc();       // millions, into level l
+
+/* ---------- time model ---------- */
+function progressH(t0,t1){let p=(t1-t0)/H;for(const b of S.boosts){const o=Math.min(t1,b.e)-Math.max(t0,b.s);if(o>0)p+=9*o/H;}return p;}
+function remH(b,now){return b.r0-progressH(b.t0,now);}
+function boostEnd(){const now=Date.now();let e=0;for(const b of S.boosts)if(b.s<=now+1000&&b.e>now)e=Math.max(e,b.e);
+  let ch=true;while(ch){ch=false;for(const b of S.boosts)if(e&&b.s<=e+1000&&b.e>e){e=b.e;ch=true;}}return e;}
+function intervals(extraH){const now=Date.now();const iv=S.boosts.filter(b=>b.e>now).map(b=>({s:b.s,e:b.e})).sort((a,b)=>a.s-b.s);
+  if(extraH>0){const last=Math.max(now,...iv.map(b=>b.e));iv.push({s:last,e:last+extraH*H});}return iv;}
+function finishAt(b,extraH){const now=Date.now();let R=remH(b,now);if(R<=0)return now+R*H;let cur=now;
+  for(const v of intervals(extraH)){if(v.e<=cur)continue;const s=Math.max(v.s,cur);const gap=(s-cur)/H;
+    if(R<=gap)return cur+R*H;R-=gap;cur=s;const len=(v.e-s)/H;if(R<=10*len)return cur+R/10*H;R-=10*len;cur=v.e;}
+  return cur+R*H;}
+function addBoost(h){const now=Date.now();const be=boostEnd();if(be>now){S.boosts.find(b=>b.e===be).e+=h*H;}else S.boosts.push({s:now,e:now+h*H});
+  const oldest=Math.min(Date.now(),...S.builders.map(b=>b.t0));S.boosts=S.boosts.filter(b=>b.e>oldest-H);}
+const potLeft=()=>Math.max(0,(S.potTotal||0)-(S.potUsed||0));
+
+/* ---------- clock helpers ---------- */
+function hm(s){const [h,m]=(s||'0:0').split(':').map(Number);return h*60+m;}
+function localMin(t){const d=new Date(t);return d.getHours()*60+d.getMinutes();}
+function asleep(t){const f=hm(S.sleep.from),to=hm(S.sleep.to),m=localMin(t);return f<to?(m>=f&&m<to):(m>=f||m<to);}
+function sleepStart(t){const f=hm(S.sleep.from);const d=new Date(t);d.setHours(Math.floor(f/60),f%60,0,0);let w=d.getTime();if(w>t)w-=DAY;return w;}
+function wakeAfter(t){const to=hm(S.sleep.to);const d=new Date(t);d.setHours(Math.floor(to/60),to%60,0,0);let w=d.getTime();if(w<=t)w+=DAY;return w;}
+function dur(ms){if(ms<0)ms=0;const s=Math.floor(ms/1000),d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),x=s%60;
+  if(d>0)return `${d}d ${h}h ${String(m).padStart(2,'0')}m`;if(h>0)return `${h}h ${String(m).padStart(2,'0')}m ${String(x).padStart(2,'0')}s`;return `${m}m ${String(x).padStart(2,'0')}s`;}
+function durShort(ms){const m=Math.max(0,Math.round(ms/MIN));const h=Math.floor(m/60);return h?`${h}h ${m%60}m`:`${m}m`;}
+function clock(t){const d=new Date(t),now=new Date();const tm=d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  if(d.toDateString()===now.toDateString())return tm;const tom=new Date(now);tom.setDate(now.getDate()+1);
+  if(d.toDateString()===tom.toDateString())return 'tomorrow '+tm;return d.toLocaleDateString([],{weekday:'short',day:'numeric'})+' '+tm;}
+const fmtM=x=>x>=1000?(x/1000).toFixed(2)+'B':(x>=100?Math.round(x):x.toFixed(1))+'M';
+const toInput=t=>{const d=new Date(t),z=n=>String(n).padStart(2,'0');return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}T${z(d.getHours())}:${z(d.getMinutes())}`;};
+
+/* ---------- planning ---------- */
+const heroes=()=>S.builders.filter(b=>b.hero);
+function idealReturn(){ // when you should next open the game
+  const now=Date.now(), hs=heroes(); if(!hs.length)return now+7*H;
+  const first=Math.min(...hs.map(b=>finishAt(b,0)));
+  if(first-now<10*MIN)return now;
+  const bedNext=asleep(now)?now:sleepStart(now)+DAY;
+  if(bedNext-now<=90*MIN&&first>bedNext)return wakeAfter(bedNext); // going to bed: cover the night with potions
+  if(!asleep(first))return first;
+  const bed=sleepStart(first)-20*MIN;          // last look before bed: burn it down, then fire sleep potions
+  return bed>now+30*MIN?bed:wakeAfter(first);
+}
+function returnTime(){const now=Date.now(),r=S.ret||{mode:'ideal'};
+  if(r.mode==='h')return now+r.h*H;
+  if(r.mode==='time'){const m=hm(r.t);const d=new Date();d.setHours(Math.floor(m/60),m%60,0,0);let t=d.getTime();if(t<now+5*MIN)t+=DAY;return t;}
+  return idealReturn();}
+function potionsFor(ret){const hs=heroes();let n=0;for(let k=1;k<=Math.min(potLeft(),40);k++){if(hs.every(b=>finishAt(b,k)>=ret))n=k;else break;}return n;}
+
+function wallStats(){
+  const c=S.walls.counts;let total=0,left=0;
+  for(const l of LEVELS){if(l>=MAXW)continue;let per=0;for(let k=l+1;k<=MAXW;k++)per+=price(k);total+=(c[l]||0)*per;left+=c[l]||0;}
+  const ringVal=(S.walls.rings||0)*1*disc(); // every ring = 1M base
+  const need=Math.max(0,total-ringVal);
+  const now=Date.now();const daysLeft=Math.max(0.05,(S.walls.by-now)/DAY);
+  const mid=new Date();mid.setHours(0,0,0,0);
+  const today=S.walls.log.filter(x=>x.t>=mid.getTime()).reduce((s,x)=>s+x.cost,0);
+  const daysLeftFromMidnight=Math.max(0.05,(S.walls.by-mid.getTime())/DAY);
+  const needAtMidnight=need+today;
+  const perDay=needAtMidnight/Math.ceil(daysLeftFromMidnight);
+  const recent=S.walls.log.filter(x=>x.t>now-3*DAY);
+  const span=recent.length?Math.max(1,(now-Math.min(...recent.map(x=>x.t)))/DAY):0;
+  const rate=recent.length?recent.reduce((s,x)=>s+x.cost,0)/Math.max(span,1):0;
+  return {need,left,daysLeft,today,perDay,rate,total};
+}
+function wallsForBudget(budget){ // cheapest-first walls you can do for a budget
+  const c={...S.walls.counts};const steps=[];let b=budget;
+  for(const l of LEVELS){if(l>=MAXW)continue;const p=price(l+1);const n=Math.min(c[l]||0,Math.floor(b/p+1e-9));if(n>0){steps.push({n,from:l,to:l+1,p});b-=n*p;}if((c[l]||0)>n)break;}
+  return steps;}
+const stepText=st=>st.map(s=>`${s.n} wall${s.n>1?'s':''} ${s.from}→${s.to} (${fmtM(s.p)} each)`).join(' + ');
+
+/* ---------- render: next ---------- */
+function renderNext(){
+  const now=Date.now(), card=$('nextCard'), big=$('nextBig'), small=$('nextSmall');
+  const done=S.builders.filter(b=>remH(b,now)<=0);
+  const evs=[];
+  for(const b of S.builders){const f=finishAt(b,0);if(f>now)evs.push({t:f,b});}
+  const be=boostEnd(); if(be>now)evs.push({t:be,pot:true});
+  evs.sort((a,b)=>a.t-b.t);
+  const doneH=done.filter(b=>b.hero), doneB=done.filter(b=>!b.hero);
+  if(doneH.length){card.className='card bad';big.textContent='Restart '+doneH.map(b=>b.name).join(', ')+' now';
+    small.textContent='Then tap its "Restarted" button and type the new timer. Spend a wall upgrade on the free builder first if you can.';}
+  else if(doneB.length){card.className='card stay';big.textContent=doneB.map(b=>b.name).join(', ')+': builder free';
+    small.textContent='Drop walls on it. Before you leave, start a trap that ends before your next visit, or remove it here if it stays free.';}
+  else if(!S.builders.length){card.className='card idle';big.textContent='Add your builders below.';small.textContent='';}
+  else{const r=idealReturn(), firstHero=heroes().map(b=>({b,f:finishAt(b,0)})).sort((a,b)=>a.f-b.f)[0];
+    card.className='card go';
+    if(!firstHero){big.textContent='Add your hero timers';small.textContent='';}
+    else if(r-now<10*MIN){big.textContent=`Stay on: ${firstHero.b.name} finishes in ${durShort(firstHero.f-now)}`;small.textContent='Keep a potion running and restart it when it pops.';}
+    else{big.textContent=`Best time back: ${clock(r)}`;
+      small.textContent=asleep(firstHero.f)?(r<firstHero.f?`${firstHero.b.name} would finish at ${clock(firstHero.f)}, after you go to bed. Check in just before bed: burn it down with a potion, restart it, then fire the sleep potions this page shows.`:`${firstHero.b.name} finishes at ${clock(firstHero.f)} while you sleep. Before bed, fire the potions shown below so nothing finishes until you wake.`)
+        :(r<firstHero.f-5*MIN?`That's when you wake. ${firstHero.b.name} finishes at ${clock(firstHero.f)}, so nothing sits finished overnight. Fire any potions the box below asks for before you sleep.`
+        :`${firstHero.b.name} finishes then. Restart it, farm, and drop loot on walls while you're on.`);}
+  }
+  const box=$('events');box.innerHTML='';
+  const h3=document.createElement('h3');h3.textContent='Coming up';box.append(h3);
+  for(const e of evs.slice(0,7)){const d=document.createElement('div');d.className='ev';
+    const t=document.createElement('span');t.className='t';t.textContent=clock(e.t);
+    const w=document.createElement('span');
+    if(e.pot)w.textContent='Potion ends. Fire the next one if you are online.';
+    else if(e.b.hero)w.textContent=`${e.b.name} finishes: restart it.`;
+    else w.textContent=`${e.b.name} frees a builder: walls, then a trap that ends before your next visit.`;
+    if(asleep(e.t)){const z=document.createElement('span');z.className='asleep';z.textContent=' while asleep';w.append(z);}
+    d.append(t,w);box.append(d);}
+  if(!evs.length){const p=document.createElement('div');p.className='note';p.textContent='Nothing running.';box.append(p);}
+}
+
+/* ---------- render: leave ---------- */
+function renderLeave(){
+  const now=Date.now(), card=$('leaveCard'), big=$('leaveBig'), small=$('leaveSmall'), btns=$('leaveBtns');btns.innerHTML='';
+  const hs=heroes();
+  if(!hs.length){card.className='card idle';big.textContent='Add your hero timers below.';small.textContent='';return;}
+  const done=hs.filter(b=>remH(b,now)<=0);
+  if(done.length){card.className='card bad';big.textContent='Restart '+done.map(b=>b.name).join(', ')+' first';small.textContent='';return;}
+  const ret=returnTime();
+  const sh=hs.map(b=>({b,R:remH(b,now),f:finishAt(b,0)})).sort((a,b)=>a.f-b.f)[0];
+  const be=boostEnd();
+  if(sh.f<ret&&sh.R<=6){card.className='card stay';
+    if(be>now){big.textContent=`Stay on: ${sh.b.name} finishes at ${clock(sh.f)}`;small.textContent=`The running potion gets it there in ${durShort(sh.f-now)}. Restart it, then check again.`;}
+    else if(potLeft()>0){big.textContent=`Stay on: fire 1 potion, ${sh.b.name} finishes in about ${Math.ceil(sh.R*6)} min`;small.textContent='Restart it, then check again.';
+      const b=document.createElement('button');b.className='boost';b.textContent='Fire 1 potion';b.onclick=()=>fire(1);btns.append(b);}
+    else{big.textContent='No potions left. Close the game.';small.textContent=`${sh.b.name} finishes at ${clock(sh.f)}.`;}
+    return;}
+  const n=potionsFor(ret);const fN=Math.min(...hs.map(b=>finishAt(b,n)));
+  card.className='card go';
+  big.textContent=n===0?'No potions now. Close the game.':`Fire ${n} potion${n>1?'s':''}, then close the game.`;
+  small.textContent=`Back at ${clock(ret)}. `+(sh.f<ret?(ret-sh.f<=H?`${sh.b.name} finishes at ${clock(sh.f)} and waits a little; that's fine. `:`Careful: ${sh.b.name} finishes at ${clock(sh.f)} and would sit idle ${durShort(ret-sh.f)}. Come back by then if you can. `):'')+`First hero then finishes at ${clock(fN)}.`;
+  if(n>0){const b=document.createElement('button');b.className='boost';b.textContent=`Fire ${n} now`;b.onclick=()=>fire(n);btns.append(b);}
+}
+
+/* ---------- render: potions ---------- */
+function renderPotions(){
+  const now=Date.now(),be=boostEnd();
+  $('boostClock').textContent=be>now?dur(be-now):'Off';
+  $('boostText').textContent=be>now?`Running until ${clock(be)}. Timers move 10× faster.`:'No potion running.';
+  const tot=S.potTotal||0,used=S.potUsed||0,left=potLeft();
+  $('potCount').textContent=`${left} left`;
+  $('potBar').style.width=(tot?Math.min(100,used/tot*100):0)+'%';
+  const len=S.jamEnd-S.jamStart, frac=Math.min(1,Math.max(0,(now-S.jamStart)/len));
+  const line=Math.round(tot*frac), daysLeft=Math.max(0.01,(S.jamEnd-now)/DAY);
+  const perDay=left/daysLeft;
+  const card=$('potCard'), a=$('potAdvice');
+  let msg=`Used ${used} of ${tot}. A straight line would be at ${line} by now. To use them all, average <b>${perDay.toFixed(1)} a day</b> from here.`;
+  let cls='card idle';
+  if(daysLeft<1){cls='card stay';msg+=` Last day: burn leftovers only on heroes you can restart before ${clock(S.jamEnd)}. A potion after your last restart is wasted.`;}
+  else if(used<line-5){cls='card stay';msg+=` You're ${line-used} behind. Fire extras before your long gaps (sleep, work): the box above already counts them for you.`;}
+  else if(used>line+5){msg+=` You're ${used-line} ahead. That's fine as long as no hero sits finished; you'll just have fewer for the last days.`;}
+  else msg+=' On pace.';
+  msg+='<br><span class="note">When you fire them barely matters: each potion takes 9 hours off every busy hero whenever it runs. What loses levels is a hero sitting finished, or potions left over at the end. Keep one running whenever you are online.</span>';
+  card.className=cls;a.innerHTML=msg;
+}
+
+/* ---------- render: builders ---------- */
+function renderBuilders(){
+  const list=$('blist');list.innerHTML='';
+  for(const b of S.builders){
+    const el=document.createElement('div');el.className='b';el.dataset.id=b.id;
+    el.innerHTML=`<div class="row spread"><div class="row"><span class="name"></span><span class="pill"></span></div>
+      <div class="row"><button class="small act-edit">Restarted / edit</button><button class="small act-del" aria-label="Remove builder">✕</button></div></div>
+      <div class="row spread"><span class="clock"></span><span class="when"></span></div>
+      <div class="edit hide">
+        <input class="nm" type="text" aria-label="Name" style="width:160px">
+        <label><input class="d" type="number" min="0" max="30" aria-label="Days" style="width:56px"> d</label>
+        <label><input class="h" type="number" min="0" max="23" aria-label="Hours" style="width:56px"> h</label>
+        <label><input class="m" type="number" min="0" max="59" aria-label="Minutes" style="width:56px"> m</label>
+        <label><input class="hero" type="checkbox"> hero</label>
+        <button class="small primary act-save">Save</button></div>`;
+    el.querySelector('.name').textContent=b.name;
+    const p=el.querySelector('.pill');p.className='pill '+(b.hero?'hero':'bld');p.textContent=b.hero?'Hero':'Building';
+    el.querySelector('.nm').value=b.name;el.querySelector('.hero').checked=!!b.hero;
+    el.querySelector('.act-edit').onclick=()=>{el.querySelector('.edit').classList.toggle('hide');el.querySelector('.d').focus();};
+    el.querySelector('.act-del').onclick=()=>{S.builders=S.builders.filter(x=>x.id!==b.id);save();renderBuilders();};
+    el.querySelector('.act-save').onclick=()=>{
+      const d=+el.querySelector('.d').value||0,h=+el.querySelector('.h').value||0,m=+el.querySelector('.m').value||0;
+      b.name=el.querySelector('.nm').value.trim()||b.name;b.hero=el.querySelector('.hero').checked;
+      if(d||h||m){b.r0=d*24+h+m/60;b.t0=Date.now();}
+      save();renderBuilders();};
+    list.append(el);}
+  tick();
+}
+function tickBuilders(){const now=Date.now();
+  for(const el of document.querySelectorAll('.b')){const b=S.builders.find(x=>x.id===el.dataset.id);if(!b)continue;
+    const R=remH(b,now),f=finishAt(b,0);el.classList.toggle('isdone',R<=0);
+    el.querySelector('.clock').textContent=R<=0?'Done':dur(f-now);
+    el.querySelector('.when').textContent=R<=0?'Restart it':`Free at ${clock(f)}`;}}
+
+/* ---------- render: walls ---------- */
+function renderWallRows(){
+  const tb=$('wallRows');tb.innerHTML='';
+  for(const l of LEVELS){const tr=document.createElement('tr');const max=l>=MAXW;
+    tr.innerHTML=`<td><b>${l}</b>${max?' <span class="sub">max</span>':''}</td><td><input type="number" min="0" max="400" aria-label="Walls at level ${l}"></td>
+      <td class="num">${max?'–':fmtM(price(l+1))+' · '+WALL[l+1].r+' rings'}</td><td class="ups"></td>`;
+    const inp=tr.querySelector('input');inp.value=S.walls.counts[l]||0;
+    inp.oninput=()=>{S.walls.counts[l]=Math.max(0,+inp.value||0);save();renderWalls();};
+    if(!max){const ups=tr.querySelector('.ups');for(const k of [1,5,10]){const b=document.createElement('button');b.className='small';b.textContent='+'+k;
+      b.setAttribute('aria-label',`Upgraded ${k} walls from ${l} to ${l+1}`);b.onclick=()=>upgradeWalls(l,k);ups.append(b);}}
+    tb.append(tr);}
+}
+function upgradeWalls(l,k){const c=S.walls.counts;const n=Math.min(k,c[l]||0);if(!n)return;
+  c[l]-=n;c[l+1]=(c[l+1]||0)+n;S.walls.log.push({t:Date.now(),n,from:l,cost:n*price(l+1)});
+  S.walls.log=S.walls.log.filter(x=>x.t>Date.now()-20*DAY);save();renderWallRows();renderWalls();}
+function renderWalls(){
+  const w=wallStats(),card=$('wallCard'),big=$('wallBig'),small=$('wallSmall');
+  if(!w.left){card.className='card go';big.textContent='All walls maxed.';small.textContent='Every bit of gold and elixir can go elsewhere now.';}
+  else{const leftToday=Math.max(0,w.perDay-w.today);const st=wallsForBudget(leftToday);
+    if(leftToday<=0.01){card.className='card go';big.textContent="Today's wall target is done.";small.textContent=`You spent ${fmtM(w.today)} on walls today. Extra now only makes later days lighter.`;}
+    else{card.className='card stay';big.textContent=`Today: ${stepText(st)||'1 more wall'}`;
+      small.textContent=`That's ${fmtM(leftToday)} more today (${fmtM(w.today)} done of ${fmtM(w.perDay)}) to finish by ${clock(S.walls.by)}.`;}}
+  const kv=$('wallKv');kv.innerHTML='';
+  const add=(k,v)=>{const a=document.createElement('span');a.textContent=k;const b=document.createElement('b');b.textContent=v;kv.append(a,b);};
+  add('Walls not maxed',w.left);add('Gold + elixir still needed',fmtM(w.need));add('Days to target',w.daysLeft.toFixed(1));add('Needed per day',fmtM(w.perDay));
+  if(w.rate>0){const eta=Date.now()+w.need/w.rate*DAY;add('At your recent pace you finish',clock(eta));}
+  const g=S.loot.gold,e=S.loot.elix;
+  if(g!=null||e!=null){const avail=Math.max(0,(g||0)+Math.max(0,(e||0)-(S.loot.keepE||0)));const st=wallsForBudget(avail);add('With the loot you have now',st.length?stepText(st):'not enough for one wall');}
+}
+
+/* ---------- actions ---------- */
+function fire(n){if(n<=0||potLeft()<=0)return;n=Math.min(n,potLeft());addBoost(n);S.potUsed=(S.potUsed||0)+n;$('potUsed').value=S.potUsed;save();tick();}
+$('fire1').onclick=()=>fire(1);
+$('boostSet').onclick=()=>{const m=+$('boostMin').value;if(isNaN(m))return;const now=Date.now(),be=boostEnd();
+  if(be>now)S.boosts.find(b=>b.e===be).e=now+m*MIN;else if(m>0)S.boosts.push({s:now,e:now+m*MIN});$('boostMin').value='';save();tick();};
+$('potTotal').oninput=()=>{S.potTotal=Math.max(0,+$('potTotal').value||0);save();tick();};
+$('potUsed').oninput=()=>{S.potUsed=Math.max(0,+$('potUsed').value||0);save();tick();};
+$('addB').onclick=()=>{S.builders.push({id:uid(),name:'New builder',hero:false,r0:0,t0:Date.now()});save();renderBuilders();
+  const e=document.querySelector('.b:last-child .edit');if(e){e.classList.remove('hide');e.querySelector('.nm').select();}};
+document.querySelectorAll('[data-ret]').forEach(b=>b.onclick=()=>{const v=b.dataset.ret;S.ret=v==='ideal'?{mode:'ideal'}:{mode:'h',h:+v};$('retTime').value='';chips();save();tick();});
+$('retTime').onchange=()=>{if($('retTime').value){S.ret={mode:'time',t:$('retTime').value};chips();save();tick();}};
+function chips(){const r=S.ret||{mode:'ideal'};document.querySelectorAll('[data-ret]').forEach(b=>b.setAttribute('aria-pressed',String((r.mode==='ideal'&&b.dataset.ret==='ideal')||(r.mode==='h'&&+b.dataset.ret===r.h))));}
+$('rings').oninput=()=>{S.walls.rings=Math.max(0,+$('rings').value||0);save();renderWalls();};
+$('wallBy').onchange=()=>{const t=new Date($('wallBy').value).getTime();if(!isNaN(t)){S.walls.by=t;save();renderWalls();}};
+const lootIn=(id,k)=>$(id).oninput=()=>{const v=$(id).value;S.loot[k]=v===''?null:Math.max(0,+v);save();renderWalls();};
+lootIn('gold','gold');lootIn('elix','elix');lootIn('keepE','keepE');
+$('jamStart').onchange=()=>{const t=new Date($('jamStart').value).getTime();if(!isNaN(t)){S.jamStart=t;save();tick();}};
+$('jamEnd').onchange=()=>{const t=new Date($('jamEnd').value).getTime();if(!isNaN(t)){S.jamEnd=t;save();tick();}};
+$('pay').oninput=()=>{S.pay=Math.min(100,Math.max(1,+$('pay').value||40));save();renderWallRows();renderWalls();};
+$('sleepFrom').onchange=()=>{S.sleep.from=$('sleepFrom').value||S.sleep.from;save();tick();};
+$('sleepTo').onchange=()=>{S.sleep.to=$('sleepTo').value||S.sleep.to;save();tick();};
+$('resetAll').onclick=()=>$('confirmReset').classList.remove('hide');
+$('resetNo').onclick=()=>$('confirmReset').classList.add('hide');
+$('resetYes').onclick=()=>{S.builders=[];S.boosts=[];$('confirmReset').classList.add('hide');save();renderBuilders();};
+$('copyB').onclick=()=>{const t=$('backup');t.value=JSON.stringify(S);t.select();
+  if(navigator.clipboard)navigator.clipboard.writeText(t.value).then(()=>$('bMsg').textContent='Copied.',()=>$('bMsg').textContent='Selected; copy it manually.');else $('bMsg').textContent='Selected; copy it manually.';};
+$('loadB').onclick=()=>{try{const o=JSON.parse($('backup').value);if(!o||o.v!==2)throw 0;S=o;save();init();$('bMsg').textContent='Loaded.';}catch(e){$('bMsg').textContent='That text is not a tracker backup.';}};
+
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));$('saveState').textContent='Saved on this device '+clock(Date.now());}catch(e){$('saveState').textContent='This browser blocks saving. Use the backup box to keep your data.';}}
+function tick(){$('jamLeft').textContent=dur(S.jamEnd-Date.now());tickBuilders();renderNext();renderLeave();renderPotions();}
+function init(){
+  $('potTotal').value=S.potTotal;$('potUsed').value=S.potUsed;$('rings').value=S.walls.rings;$('wallBy').value=toInput(S.walls.by);
+  $('gold').value=S.loot.gold??'';$('elix').value=S.loot.elix??'';$('keepE').value=S.loot.keepE??'';
+  $('jamStart').value=toInput(S.jamStart);$('jamEnd').value=toInput(S.jamEnd);$('pay').value=S.pay??40;
+  $('sleepFrom').value=S.sleep.from;$('sleepTo').value=S.sleep.to;
+  chips();renderBuilders();renderWallRows();renderWalls();
+}
+init();
+setInterval(tick,1000);
+setInterval(renderWalls,60000);
+})();
+</script>
+</body>
+</html>
