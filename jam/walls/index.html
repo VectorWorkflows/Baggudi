@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hammer Jam Walls</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+/* Same look as the tracker: one column of panels; charts are drawn inline from your saved wall data */
+:root{
+  --bg:#eef1f6; --panel:#ffffff; --ink:#18202e; --muted:#5d6779; --line:#d5dbe5; --grid:#e6eaf1;
+  --gold:#b7790a; --gold-soft:#fbefd4; --elix:#9b3fb5; --boost:#0f7f86; --boost-soft:#d6f1f2;
+  --good:#1f7a3d; --good-soft:#dcf1e2; --warn:#a4560b; --warn-soft:#fde7cf; --bad:#b3261e; --bad-soft:#fadcd9;
+  --l15:#c9ced8; --l16:#a7b4c9; --l17:#7c91b3; --l18:#4d6a9a; --l19:#b7790a;
+  --input:#f6f8fb; color-scheme:light;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Nunito Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0f141d; --panel:#171e2a; --ink:#e8ecf3; --muted:#9aa5b8; --line:#2a3445; --grid:#222b3a;
+  --gold:#f0b43c; --gold-soft:#3a2d12; --elix:#d58cf0; --boost:#4fd0d6; --boost-soft:#123537;
+  --good:#5fd38a; --good-soft:#163222; --warn:#f3a55a; --warn-soft:#3b2814; --bad:#ff8a80; --bad-soft:#3d1c1a;
+  --l15:#3a4558; --l16:#4f6180; --l17:#6a82ab; --l18:#8fa9d6; --l19:#f0b43c;
+  --input:#111823; color-scheme:dark}}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+.wrap{max-width:720px;margin:0 auto;padding-block:18px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:14px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.02em;margin:0;text-wrap:balance}
+h1{font-size:30px;line-height:1.05}
+h2{font-size:20px;text-transform:uppercase;letter-spacing:.06em}
+h3{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+a{color:var(--boost);font-weight:700}
+.sub{color:var(--muted);font-size:13px}
+.note{font-size:12.5px;color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:12px;min-width:0}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.spread{justify-content:space-between}
+.headline{font-family:var(--display);font-size:44px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.tile{border:1px solid var(--line);border-radius:9px;padding:10px;display:grid;gap:2px}
+.tile b{font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums}
+.meter{display:grid;gap:4px}
+.meter .lab{display:flex;justify-content:space-between;font-size:13px;font-variant-numeric:tabular-nums}
+.bar{height:12px;border-radius:99px;background:var(--input);border:1px solid var(--line);overflow:hidden}
+.bar>i{display:block;height:100%}
+.card{border-radius:9px;padding:12px;display:grid;gap:6px}
+.go{background:var(--good-soft);border:1px solid var(--good)}
+.stay{background:var(--warn-soft);border:1px solid var(--warn)}
+.big{font-family:var(--display);font-size:24px;font-weight:700;line-height:1.12}
+button{font:inherit;font-weight:700;border-radius:8px;border:1px solid var(--line);background:var(--input);color:var(--ink);padding:7px 11px;cursor:pointer}
+button.small{padding:4px 9px;font-size:13px}
+button.chip[aria-pressed="true"]{background:var(--boost-soft);border-color:var(--boost)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--boost);outline-offset:2px}
+input{font:inherit;color:var(--ink);background:var(--input);border:1px solid var(--line);border-radius:7px;padding:6px 8px;min-width:0}
+input[type=number]{width:74px;text-align:center}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:7px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+td.n{font-variant-numeric:tabular-nums;text-align:right}
+th.n{text-align:right}
+.tablewrap{overflow-x:auto}
+.sw{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:-1px;margin-right:5px}
+svg{display:block;width:100%;height:auto}
+svg text{font-family:var(--body);font-size:21px;fill:var(--muted)}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row spread">
+    <div><h1>Hammer Jam Walls</h1><div class="sub">Reads and saves the same data as your tracker.</div></div>
+    <a href="/jam/">Back to tracker</a>
+  </div>
+
+  <section class="panel" aria-labelledby="h-sum">
+    <h2 id="h-sum" class="sr">Where you stand</h2>
+    <div><div class="sub">Gold + elixir still needed</div><div class="headline" id="remain">–</div></div>
+    <div class="meter"><div class="lab"><span>Resources spent</span><span id="mResT"></span></div><div class="bar"><i id="mRes" style="background:var(--gold)"></i></div></div>
+    <div class="meter"><div class="lab"><span>Upgrades done (by count)</span><span id="mUpT"></span></div><div class="bar"><i id="mUp" style="background:var(--l17)"></i></div></div>
+    <div class="meter"><div class="lab"><span>Walls at level 19</span><span id="mMaxT"></span></div><div class="bar"><i id="mMax" style="background:var(--l19)"></i></div></div>
+    <div class="card stay" id="insight"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-pace">
+    <div class="row spread"><h2 id="h-pace">Pace</h2><label class="sub">Finish by <input type="datetime-local" id="by"></label></div>
+    <div class="tiles" id="paceTiles"></div>
+    <h3>Still needed over time</h3>
+    <div id="burn"></div>
+    <div class="legend"><span><span class="sw" style="background:var(--gold)"></span>Still needed (saved each day you update)</span><span><span class="sw" style="background:var(--muted)"></span>On-time line</span></div>
+    <h3>Spent per day</h3>
+    <div id="daily"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-today">
+    <h2 id="h-today">Today's walls</h2>
+    <div class="row"><span class="sub">Order</span>
+      <button class="chip small" data-order="cheap">Cheapest first</button>
+      <button class="chip small" data-order="top">Highest level first</button></div>
+    <div class="card go" id="todayCard"><div class="big" id="todayBig"></div><div class="sub" id="todaySmall"></div></div>
+    <div class="row">
+      <label class="sub">Gold now (M) <input type="number" id="gold" min="0" step="0.1"></label>
+      <label class="sub">Elixir now (M) <input type="number" id="elix" min="0" step="0.1"></label>
+      <label class="sub">Keep for Warden (M) <input type="number" id="keepE" min="0" step="0.1"></label>
+    </div>
+    <div class="card go hide" id="nowCard"><div class="big" id="nowBig"></div><div class="sub" id="nowSmall"></div></div>
+    <div class="note">The order doesn't change the total. Cheapest first gives more upgrades per day early; highest first maxes walls sooner for defence.</div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-tier">
+    <h2 id="h-tier">Where the cost sits</h2>
+    <div id="tierChart"></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Upgrade</th><th class="n">Walls to do</th><th class="n">Each</th><th class="n">Rings each</th><th class="n">Tier total</th><th class="n">Share</th></tr></thead>
+      <tbody id="tierRows"></tbody>
+    </table></div>
+    <div class="note">Every wall below 19 still has to climb each step above it, so the 18→19 tier is paid by nearly all 325 walls. That is why resources move slower than the upgrade count.</div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-lvl">
+    <h2 id="h-lvl">Your walls by level</h2>
+    <div id="lvlChart"></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Level</th><th class="n">Walls</th><th class="n">Each still costs to max</th><th>Just upgraded</th></tr></thead>
+      <tbody id="lvlRows"></tbody>
+    </table></div>
+    <div class="row"><label class="sub">Wall rings left <input type="number" id="rings" min="0" max="500"></label><span class="note" id="ringNote"></span></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-farm">
+    <h2 id="h-farm">Farming</h2>
+    <div class="row"><label class="sub">Your farm rate, gold + elixir per hour (M) <input type="number" id="rate" min="1" step="1"></label></div>
+    <div class="tiles" id="farmTiles"></div>
+    <div class="note">Your 15-minute test gave about 14 to 16M. If that was gold and elixir combined, the rate is about 60M an hour; if each, about 120M.</div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-set">
+    <h2 id="h-set">Starting point</h2>
+    <div class="note" id="baseNote"></div>
+    <div class="row"><button class="small" id="rebase">Set today's walls as the new start</button></div>
+    <div class="row hide" id="rebaseConfirm"><span class="sub">Reset "spent" to zero from today?</span><button class="small" id="rebaseYes">Yes</button><button class="small" id="rebaseNo">Cancel</button></div>
+    <div class="note" id="saveState"></div>
+  </section>
+</div>
+
+<script>
+(function(){
+"use strict";
+const KEY='hammerJamTracker.v2', DAY=864e5;
+const WALL={16:{m:4,r:4},17:{m:5,r:5},18:{m:7,r:7},19:{m:10,r:10}};
+const LV=[15,16,17,18,19], MAXW=19;
+const START_COUNTS={15:236,16:56,17:33,18:0,19:0}; // your walls when the Jam opened
+const $=id=>document.getElementById(id);
+let S=load();
+
+function load(){let s=null;try{s=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){}
+  if(!s||s.v!==2)s={v:2,pay:40,jamStart:Date.parse('2026-11-01T07:00:00Z'),jamEnd:Date.parse('2026-11-16T07:00:00Z'),builders:[],boosts:[],potTotal:92,potUsed:0,
+    ret:{mode:'ideal'},sleep:{from:'00:30',to:'09:00'},walls:{counts:{...START_COUNTS},rings:25,by:Date.parse('2026-11-14T07:00:00Z'),log:[]},loot:{gold:null,elix:null,keepE:4}};
+  const w=s.walls; w.log=w.log||[]; w.snaps=w.snaps||{}; w.order=w.order||'cheap'; w.rate=w.rate||60;
+  if(!w.base)w.base={counts:{...START_COUNTS},rings:25,t:s.jamStart};
+  s.loot=s.loot||{gold:null,elix:null,keepE:4};
+  return s;}
+function save(){snap();try{localStorage.setItem(KEY,JSON.stringify(S));$('saveState').textContent='Saved on this device. Your tracker sees the same numbers.';}
+  catch(e){$('saveState').textContent='This browser blocks saving.';}}
+window.addEventListener('storage',e=>{if(e.key===KEY&&e.newValue){S=load();render();}});
+
+/* ---------- maths ---------- */
+const pay=()=>(S.pay??40)/100;
+const price=l=>WALL[l].m*pay();                  // M, upgrade into level l
+const ringVal=()=>1*pay();                        // every ring = 1M at normal prices
+function toMax(l){let s=0;for(let k=l+1;k<=MAXW;k++)s+=price(k);return s;}
+function costOf(c){return LV.reduce((s,l)=>s+(c[l]||0)*toMax(l),0);}
+function stepsOf(c){return LV.reduce((s,l)=>s+(c[l]||0)*(MAXW-l),0);}
+function stats(){const w=S.walls,b=w.base;
+  const total=Math.max(0,costOf(b.counts)-(b.rings||0)*ringVal());
+  const remain=Math.max(0,costOf(w.counts)-(w.rings||0)*ringVal());
+  const spent=Math.max(0,total-remain);
+  const upTotal=stepsOf(b.counts), upLeft=stepsOf(w.counts);
+  const walls=LV.reduce((s,l)=>s+(w.counts[l]||0),0);
+  return {total,remain,spent,upTotal,upLeft,upDone:upTotal-upLeft,walls,maxed:w.counts[19]||0};}
+const dayKey=t=>{const d=new Date(t);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');};
+function snap(){S.walls.snaps[dayKey(Date.now())]=Math.round(stats().remain*10)/10;}
+function midnight(t){const d=new Date(t);d.setHours(0,0,0,0);return d.getTime();}
+function pace(){const st=stats(),now=Date.now(),by=S.walls.by;const m=midnight(now);
+  const keys=Object.keys(S.walls.snaps).sort();
+  const before=keys.filter(k=>k<dayKey(now));
+  const startToday=before.length?S.walls.snaps[before[before.length-1]]:st.total;
+  const today=Math.max(0,startToday-st.remain);
+  const daysFromMid=Math.max(1,Math.ceil((by-m)/DAY));
+  const perDay=startToday/daysFromMid;
+  return {today,perDay,daysLeft:Math.max(0,(by-now)/DAY),startToday};}
+const fmt=x=>x>=1000?(x/1000).toFixed(2)+'B':x>=100?Math.round(x)+'M':x.toFixed(1)+'M';
+const pct=(a,b)=>b?Math.round(a/b*100):0;
+function plan(budget,order){const c={...S.walls.counts};const out=[];let left=budget;
+  const lv=order==='top'?[18,17,16,15]:[15,16,17,18];
+  for(const l of lv){const p=price(l+1);const n=Math.min(c[l]||0,Math.floor(left/p+1e-9));if(n>0){out.push({n,from:l,to:l+1,p});left-=n*p;}if((c[l]||0)>n)break;}
+  return out;}
+const planText=p=>p.map(s=>`${s.n} wall${s.n>1?'s':''} ${s.from}→${s.to}`).join(' + ');
+
+/* ---------- charts (plain SVG) ---------- */
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent,text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.append(e);return e;}
+function burnChart(){const box=$('burn');box.innerHTML='';const st=stats();const W=640,Hh=300,L=84,R=16,T=24,B=36;
+  const t0=midnight(S.walls.base.t),t1=S.walls.by;const x=t=>L+(t-t0)/(t1-t0)*(W-L-R);const y=v=>T+(1-v/Math.max(st.total,1))*(Hh-T-B);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${Hh}`,role:'img','aria-label':'Gold and elixir still needed over time'},box);
+  for(let i=0;i<=4;i++){const v=st.total*i/4;el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--grid)'},svg);el('text',{x:L-6,y:y(v)+4,'text-anchor':'end'},svg,fmt(v));}
+  for(let t=t0;t<=t1;t+=3*DAY){el('text',{x:x(t),y:Hh-8,'text-anchor':'middle'},svg,new Date(t).toLocaleDateString([],{day:'numeric',month:'short'}));}
+  el('line',{x1:x(t0),y1:y(st.total),x2:x(t1),y2:y(0),stroke:'var(--muted)','stroke-dasharray':'5 4'},svg);
+  const pts=[[t0,st.total]];for(const k of Object.keys(S.walls.snaps).sort()){const t=new Date(k+'T23:59:00').getTime();pts.push([Math.min(t,Date.now()),S.walls.snaps[k]]);}
+  const d=pts.map((p,i)=>(i?'L':'M')+x(Math.max(t0,p[0])).toFixed(1)+' '+y(p[1]).toFixed(1)).join(' ');
+  el('path',{d,fill:'none',stroke:'var(--gold)','stroke-width':3,'stroke-linejoin':'round'},svg);
+  const last=pts[pts.length-1];el('circle',{cx:x(Math.max(t0,last[0])),cy:y(last[1]),r:5,fill:'var(--gold)'},svg);
+  el('text',{x:Math.min(W-R-4,x(Math.max(t0,last[0]))+8),y:y(last[1])-8,fill:'var(--ink)','font-weight':700},svg,fmt(last[1]));}
+function dailyChart(){const box=$('daily');box.innerHTML='';const st=stats(),p=pace();
+  const keys=Object.keys(S.walls.snaps).sort();const rows=[];let prev=st.total;
+  for(const k of keys){rows.push({k,v:Math.max(0,prev-S.walls.snaps[k])});prev=S.walls.snaps[k];}
+  const W=640,Hh=240,L=84,R=16,T=28,B=36;const max=Math.max(p.perDay*1.3,...rows.map(r=>r.v),1);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${Hh}`,role:'img','aria-label':'Gold and elixir spent on walls per day'},box);
+  const y=v=>T+(1-v/max)*(Hh-T-B);
+  for(let i=0;i<=3;i++){const v=max*i/3;el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--grid)'},svg);el('text',{x:L-6,y:y(v)+4,'text-anchor':'end'},svg,fmt(v));}
+  if(!rows.length){el('text',{x:W/2,y:Hh/2,'text-anchor':'middle'},svg,'Bars appear as you update walls each day.');}
+  const bw=Math.min(40,(W-L-R)/Math.max(rows.length,1)-8);
+  rows.forEach((r,i)=>{const cx=L+8+i*(bw+8);const ok=r.v>=p.perDay*0.95;
+    const rect=el('rect',{x:cx,y:y(r.v),width:bw,height:Math.max(0,y(0)-y(r.v)),rx:3,fill:ok?'var(--good)':'var(--gold)'},svg);
+    el('title',{},rect,`${r.k}: ${fmt(r.v)}`);
+    el('text',{x:cx+bw/2,y:Hh-8,'text-anchor':'middle'},svg,new Date(r.k+'T12:00:00').getDate());});
+  el('line',{x1:L,x2:W-R,y1:y(p.perDay),y2:y(p.perDay),stroke:'var(--ink)','stroke-dasharray':'4 4'},svg);
+  el('text',{x:W-R,y:y(p.perDay)-6,'text-anchor':'end',fill:'var(--ink)'},svg,'needed '+fmt(p.perDay)+'/day');}
+function tierChart(){const box=$('tierChart');box.innerHTML='';const c=S.walls.counts;
+  const tiers=[16,17,18,19].map(k=>{const n=LV.filter(l=>l<k).reduce((s,l)=>s+(c[l]||0),0);return {k,n,cost:n*price(k)};});
+  const max=Math.max(...tiers.map(t=>t.cost),1);const W=640,rowH=48,L=70,R=10;const Hh=tiers.length*rowH+8;
+  const svg=el('svg',{viewBox:`0 0 ${W} ${Hh}`,role:'img','aria-label':'Remaining cost by wall tier'},box);
+  tiers.forEach((t,i)=>{const yy=4+i*rowH;el('text',{x:L-8,y:yy+30,'text-anchor':'end',fill:'var(--ink)','font-weight':700},svg,`→ ${t.k}`);
+    const w=(W-L-R)*t.cost/max;el('rect',{x:L,y:yy+6,width:Math.max(2,w),height:rowH-14,rx:4,fill:`var(--l${t.k})`},svg);
+    const inside=w>260;el('text',{x:inside?L+10:L+w+8,y:yy+30,fill:inside&&t.k>=18?'var(--panel)':'var(--ink)','font-weight':700},svg,`${fmt(t.cost)} · ${t.n} walls`);});
+  return tiers;}
+function lvlChart(){const box=$('lvlChart');box.innerHTML='';const c=S.walls.counts;const tot=LV.reduce((s,l)=>s+(c[l]||0),0)||1;
+  const W=640,Hh=84;const svg=el('svg',{viewBox:`0 0 ${W} ${Hh}`,role:'img','aria-label':'Walls by level'},box);let x=0;
+  for(const l of LV){const n=c[l]||0;if(!n)continue;const w=W*n/tot;const r=el('rect',{x,y:4,width:w,height:46,fill:`var(--l${l})`},svg);el('title',{},r,`Level ${l}: ${n}`);
+    if(w>60)el('text',{x:x+w/2,y:35,'text-anchor':'middle',fill:l>=18?'var(--panel)':'var(--ink)','font-weight':700},svg,`${l}: ${n}`);x+=w;}
+  el('text',{x:0,y:78},svg,`${tot} walls`);}
+
+/* ---------- render ---------- */
+function render(){const st=stats(),p=pace(),w=S.walls;
+  $('remain').textContent=fmt(st.remain);
+  const set=(id,a,b,label)=>{$(id).style.width=Math.min(100,pct(a,b))+'%';$(id+'T').textContent=label;};
+  set('mRes',st.spent,st.total,`${fmt(st.spent)} of ${fmt(st.total)} · ${pct(st.spent,st.total)}%`);
+  set('mUp',st.upDone,st.upTotal,`${st.upDone} of ${st.upTotal} · ${pct(st.upDone,st.upTotal)}%`);
+  set('mMax',st.maxed,st.walls,`${st.maxed} of ${st.walls}`);
+  const gap=pct(st.upDone,st.upTotal)-pct(st.spent,st.total);
+  $('insight').innerHTML=gap>2?`You've done <b>${pct(st.upDone,st.upTotal)}%</b> of the upgrades but only <b>${pct(st.spent,st.total)}%</b> of the resources. The steps left are the expensive ones, so don't judge progress by the count.`
+    :st.upDone===0?`At the start, the 18→19 step alone is about <b>${pct(tierCost(19),st.total+(w.base.rings||0)*ringVal())}%</b> of the bill. Judge progress by resources spent, not walls upgraded.`
+    :`Count and resources are moving together right now. That changes once the cheap 15→16 steps run out.`;
+  $('by').value=toInput(w.by);
+  const tiles=$('paceTiles');tiles.innerHTML='';
+  const tile=(k,v,sub)=>{const d=document.createElement('div');d.className='tile';d.innerHTML=`<span class="sub"></span><b></b><span class="note"></span>`;d.children[0].textContent=k;d.children[1].textContent=v;d.children[2].textContent=sub||'';tiles.append(d);};
+  tile('Needed per day',fmt(p.perDay),`${Math.ceil(p.daysLeft)} days to go`);
+  tile('Spent today',fmt(p.today),p.today>=p.perDay?'Target met':fmt(Math.max(0,p.perDay-p.today))+' to go');
+  const proj=projected();
+  tile('Finish at this pace',proj?new Date(proj).toLocaleDateString([],{weekday:'short',day:'numeric',month:'short'}):'–',proj?(proj<=w.by?'on time':'late: farm more'):'needs a few days of data');
+  burnChart();dailyChart();
+  // today
+  document.querySelectorAll('[data-order]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.order===w.order)));
+  const left=Math.max(0,p.perDay-p.today);const tp=plan(left,w.order);
+  $('todayBig').textContent=left<=0.05?"Today's target is done":`Today: ${planText(tp)||'1 more wall'}`;
+  $('todaySmall').textContent=left<=0.05?'Anything extra makes later days lighter.':`${fmt(left)} more today to stay on track.`;
+  $('todayCard').className='card '+(left<=0.05?'go':'stay');
+  $('gold').value=S.loot.gold??'';$('elix').value=S.loot.elix??'';$('keepE').value=S.loot.keepE??'';
+  if(S.loot.gold!=null||S.loot.elix!=null){const av=Math.max(0,(S.loot.gold||0)+Math.max(0,(S.loot.elix||0)-(S.loot.keepE||0)));const np=plan(av,w.order);
+    $('nowCard').classList.remove('hide');$('nowBig').textContent=np.length?`With your loot now: ${planText(np)}`:'Not enough loot for one wall yet';
+    $('nowSmall').textContent=`${fmt(av)} available after keeping elixir for the Warden.`;}else $('nowCard').classList.add('hide');
+  // tiers
+  const tiers=tierChart();const tb=$('tierRows');tb.innerHTML='';const tierSum=tiers.reduce((s,t)=>s+t.cost,0)||1;
+  for(const t of tiers){const tr=document.createElement('tr');tr.innerHTML=`<td><span class="sw" style="background:var(--l${t.k})"></span>${t.k-1}→${t.k}</td><td class="n">${t.n}</td><td class="n">${fmt(price(t.k))}</td><td class="n">${WALL[t.k].r}</td><td class="n">${fmt(t.cost)}</td><td class="n">${pct(t.cost,tierSum)}%</td>`;tb.append(tr);}
+  // levels
+  lvlChart();const lb=$('lvlRows');lb.innerHTML='';
+  for(const l of LV){const tr=document.createElement('tr');tr.innerHTML=`<td><span class="sw" style="background:var(--l${l})"></span><b>${l}</b></td><td class="n"><input type="number" min="0" max="400" aria-label="Walls at level ${l}"></td><td class="n">${l<MAXW?fmt(toMax(l)):'maxed'}</td><td class="ups"></td>`;
+    const inp=tr.querySelector('input');inp.value=w.counts[l]||0;inp.onchange=()=>{w.counts[l]=Math.max(0,+inp.value||0);save();render();};
+    if(l<MAXW)for(const k of [1,5,10]){const b=document.createElement('button');b.className='small';b.textContent='+'+k;b.setAttribute('aria-label',`Upgraded ${k} walls from ${l} to ${l+1}`);b.onclick=()=>up(l,k);tr.querySelector('.ups').append(b);}
+    lb.append(tr);}
+  $('rings').value=w.rings??0;$('ringNote').textContent=`Worth ${fmt((w.rings||0)*ringVal())}. Same value on every level, so spend them anywhere.`;
+  // farm
+  const ft=$('farmTiles');ft.innerHTML='';const r=w.rate||60;
+  const ftile=(k,v,sub)=>{const d=document.createElement('div');d.className='tile';d.innerHTML=`<span class="sub"></span><b></b><span class="note"></span>`;d.children[0].textContent=k;d.children[1].textContent=v;d.children[2].textContent=sub||'';ft.append(d);};
+  ftile('Farming per day for walls',(p.perDay/r).toFixed(1)+' h',`at ${r}M an hour`);
+  ftile('Farming left today',(Math.max(0,p.perDay-p.today)/r).toFixed(1)+' h','to hit today\'s target');
+  ftile('Total farming left',Math.round(st.remain/r)+' h',`about ${(st.remain/r/Math.max(1,p.daysLeft)).toFixed(1)} h a day`);
+  $('rate').value=r;
+  const bt=new Date(w.base.t);$('baseNote').textContent=`"Spent" counts from ${bt.toLocaleDateString([],{day:'numeric',month:'short'})}, when you had ${LV.map(l=>(w.base.counts[l]||0)+' at '+l).filter(s=>!s.startsWith('0 ')).join(', ')} and ${w.base.rings} rings.`;
+}
+function tierCost(k){const c=S.walls.base.counts;return LV.filter(l=>l<k).reduce((s,l)=>s+(c[l]||0),0)*price(k);}
+function projected(){const keys=Object.keys(S.walls.snaps).sort();const st=stats();
+  const days=(Date.now()-S.walls.base.t)/DAY;if(days<2)return null;const rate=st.spent/days;if(rate<=0)return null;return Date.now()+st.remain/rate*DAY;}
+function up(l,k){const c=S.walls.counts;const n=Math.min(k,c[l]||0);if(!n)return;c[l]-=n;c[l+1]=(c[l+1]||0)+n;
+  S.walls.log.push({t:Date.now(),n,from:l,cost:n*price(l+1)});S.walls.log=S.walls.log.filter(x=>x.t>Date.now()-20*DAY);save();render();}
+const toInput=t=>{const d=new Date(t),z=n=>String(n).padStart(2,'0');return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}T${z(d.getHours())}:${z(d.getMinutes())}`;};
+
+/* ---------- inputs ---------- */
+$('by').onchange=()=>{const t=new Date($('by').value).getTime();if(!isNaN(t)){S.walls.by=t;save();render();}};
+document.querySelectorAll('[data-order]').forEach(b=>b.onclick=()=>{S.walls.order=b.dataset.order;save();render();});
+const lootIn=(id,k)=>$(id).onchange=()=>{const v=$(id).value;S.loot[k]=v===''?null:Math.max(0,+v);save();render();};
+lootIn('gold','gold');lootIn('elix','elix');lootIn('keepE','keepE');
+$('rings').onchange=()=>{S.walls.rings=Math.max(0,+$('rings').value||0);save();render();};
+$('rate').onchange=()=>{S.walls.rate=Math.max(1,+$('rate').value||60);save();render();};
+$('rebase').onclick=()=>$('rebaseConfirm').classList.remove('hide');
+$('rebaseNo').onclick=()=>$('rebaseConfirm').classList.add('hide');
+$('rebaseYes').onclick=()=>{S.walls.base={counts:{...S.walls.counts},rings:S.walls.rings||0,t:Date.now()};S.walls.snaps={};$('rebaseConfirm').classList.add('hide');save();render();};
+
+save(); render();
+setInterval(render,60000);
+})();
+</script>
+<style>.hide{display:none!important}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}</style>
+</body>
+</html>
