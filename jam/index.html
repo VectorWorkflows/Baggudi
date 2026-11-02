@@ -145,7 +145,7 @@ details summary{cursor:pointer;font-weight:700}
 
   <!-- WALLS -->
   <section class="panel" aria-labelledby="h-w">
-    <h2 id="h-w">Walls</h2>
+    <div class="row spread"><h2 id="h-w">Walls</h2><a href="/jam/walls/" style="color:var(--boost);font-weight:700">Open wall dashboard</a></div>
     <div class="card idle" id="wallCard"><div class="big" id="wallBig">–</div><div class="sub" id="wallSmall"></div></div>
     <div class="tablewrap"><table>
       <thead><tr><th>Level now</th><th>Walls</th><th>Next level costs</th><th>Just upgraded</th></tr></thead>
@@ -190,6 +190,7 @@ details summary{cursor:pointer;font-weight:700}
   </section>
 </div>
 
+<script src="/jam/sync.js"></script>
 <script>
 (function(){
 "use strict";
@@ -463,7 +464,8 @@ $('copyB').onclick=()=>{const t=$('backup');t.value=JSON.stringify(S);t.select()
   if(navigator.clipboard)navigator.clipboard.writeText(t.value).then(()=>$('bMsg').textContent='Copied.',()=>$('bMsg').textContent='Selected; copy it manually.');else $('bMsg').textContent='Selected; copy it manually.';};
 $('loadB').onclick=()=>{try{const o=JSON.parse($('backup').value);if(!o||o.v!==2)throw 0;S=o;save();init();$('bMsg').textContent='Loaded.';}catch(e){$('bMsg').textContent='That text is not a tracker backup.';}};
 
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S));$('saveState').textContent='Saved on this device '+clock(Date.now());}catch(e){$('saveState').textContent='This browser blocks saving. Use the backup box to keep your data.';}}
+function save(){if(window.JamSync)JamSync.push(S);try{localStorage.setItem(KEY,JSON.stringify(S));$('saveState').textContent='Saved on this device '+clock(Date.now());}catch(e){$('saveState').textContent='This browser blocks saving. Use the backup box to keep your data.';}}
+window.addEventListener('storage',e=>{if(e.key===KEY&&e.newValue){try{const o=JSON.parse(e.newValue);if(o&&o.v===2){S=o;init();}}catch(x){}}});
 function tick(){$('jamLeft').textContent=dur(S.jamEnd-Date.now());tickBuilders();renderNext();renderLeave();renderPotions();}
 function init(){
   $('potTotal').value=S.potTotal;$('potUsed').value=S.potUsed;$('rings').value=S.walls.rings;$('wallBy').value=toInput(S.walls.by);
@@ -473,6 +475,7 @@ function init(){
   chips();renderBuilders();renderWallRows();renderWalls();
 }
 init();
+if(window.JamSync){JamSync.state(()=>S);JamSync.onRemote(o=>{if(o&&o.v===2){S=o;init();}});JamSync.start();}
 setInterval(tick,1000);
 setInterval(renderWalls,60000);
 })();

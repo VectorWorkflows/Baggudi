@@ -144,6 +144,7 @@ svg text{font-family:var(--body);font-size:21px;fill:var(--muted)}
   </section>
 </div>
 
+<script src="/jam/sync.js"></script>
 <script>
 (function(){
 "use strict";
@@ -161,7 +162,7 @@ function load(){let s=null;try{s=JSON.parse(localStorage.getItem(KEY)||'null');}
   if(!w.base)w.base={counts:{...START_COUNTS},rings:25,t:s.jamStart};
   s.loot=s.loot||{gold:null,elix:null,keepE:4};
   return s;}
-function save(){snap();try{localStorage.setItem(KEY,JSON.stringify(S));$('saveState').textContent='Saved on this device. Your tracker sees the same numbers.';}
+function save(local){snap();if(!local&&window.JamSync)JamSync.push(S);try{localStorage.setItem(KEY,JSON.stringify(S));$('saveState').textContent='Saved on this device. Your tracker sees the same numbers.';}
   catch(e){$('saveState').textContent='This browser blocks saving.';}}
 window.addEventListener('storage',e=>{if(e.key===KEY&&e.newValue){S=load();render();}});
 
@@ -307,7 +308,8 @@ $('rebase').onclick=()=>$('rebaseConfirm').classList.remove('hide');
 $('rebaseNo').onclick=()=>$('rebaseConfirm').classList.add('hide');
 $('rebaseYes').onclick=()=>{S.walls.base={counts:{...S.walls.counts},rings:S.walls.rings||0,t:Date.now()};S.walls.snaps={};$('rebaseConfirm').classList.add('hide');save();render();};
 
-save(); render();
+save(true); render();
+if(window.JamSync){JamSync.state(()=>S);JamSync.onRemote(()=>{S=load();render();});JamSync.start();}
 setInterval(render,60000);
 })();
 </script>
